@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<root>
+
+  <!-- 
+      # Declare hardware devices
+  -->
+  <devicevendordef>
+    <vendorname>daskeyboard</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+  <deviceproductdef>
+    <productname>daskeyboard</productname>
+    <productid>0x2013</productid>
+  </deviceproductdef>
+
+ <devicevendordef>
+    <vendorname>Apple</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+  <deviceproductdef>
+    <productname>macbook</productname>
+    <productid>0x0253</productid>
+  </deviceproductdef>
+
+  <!-- 
+      # Key bindings
+  -->
+  <item>
+    <name>Remap Caps to Hyper</name>
+    <appendix>OS X doesn't have a Hyper. This maps CAPS to Control + Shift + Option + Command.</appendix>
+    <identifier>caps_to_hyper</identifier>
+    <autogen>
+      --KeyToKey--
+      KeyCode::F19,
+      KeyCode::COMMAND_L,
+      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Remap right CMD to right CMD</name>
+    <appendix>Fix odd behaviour with external PC keyboard</appendix>
+    <identifier>cmd_to_cmdr</identifier>
+    <autogen>
+      --KeyToKey--
+      KeyCode::F18,
+      KeyCode::COMMAND_R
+    </autogen>
+  </item>
+
+  <item>
+    <name>PC Keyboard context menu button to hyper</name>
+    <appendix>PC Context menu button is unused on OSX. Change to hyper key</appendix>
+    <identifier>private.external_kb_hyper</identifier>
+    <device_only>
+      DeviceVendor::daskeyboard,
+      DeviceProduct::daskeyboard
+    </device_only>
+    <autogen>
+      __KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::COMMAND_L,
+      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Right OPTION key</name>
+    <appendix>Fix ordering of modifier keys right of space.</appendix>
+    <identifier>right_option</identifier>
+    <device_only>
+      DeviceVendor::daskeyboard,
+      DeviceProduct::daskeyboard
+    </device_only>
+    <autogen>
+      --KeyToKey--
+      KeyCode::COMMAND_R,
+      KeyCode::OPTION_R
+    </autogen>
+  </item>
+
+  <item>
+    <name>§ for ` on external keyboard only</name>
+    <appendix>Swapped around to match OSX defaut kb.</appendix>
+    <identifier>private.external_kb_modifiers</identifier>
+    <device_only>
+      DeviceVendor::daskeyboard,
+      DeviceProduct::daskeyboard
+    </device_only>
+    <autogen>__KeyToKey__ KeyCode::BACKQUOTE, KeyCode::DANISH_DOLLAR</autogen>
+    <autogen>__KeyToKey__ KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE</autogen>
+  </item>
+
+  <item>
+    <name>Hold ESC to open iTerm (COMMMAND + ESC)</name>
+    <appendix>iTerm show / hide is bound to CMD + ESC. Immitate this action on ESC hold.</appendix>
+    <identifier>private.hold_esc</identifier>
+    <autogen>--HoldingKeyToKey-- 
+      KeyCode::ESCAPE, 
+      KeyCode::ESCAPE,
+      KeyCode::VK_NONE,
+      KeyCode::ESCAPE, ModifierFlag::COMMAND_L  | ModifierFlag::NONE
+    </autogen>
+  </item>
+ 
+  <item>
+    <name>Right alt to hyper</name>
+    <appendix>Right alt key remapped to hyper on Macbook keyboard</appendix>
+    <identifier>private.alt.to.hyper</identifier>
+    <autogen>
+      --KeyToKey--
+      KeyCode::OPTION_R,
+      KeyCode::COMMAND_L,
+      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+          
+  <item>
+  <name>Hold number keys to simulate shift press</name>
+    <appendix>Input symbols on hold of number key</appendix>
+    <identifier>private.num_change</identifier>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_1,
+      KeyCode::KEY_1,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_1, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_2, 
+      KeyCode::KEY_2,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_2, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_3, 
+      KeyCode::KEY_3,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_3, ModifierFlag::SHIFT_L
+    </autogen>    
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_4, 
+      KeyCode::KEY_4,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_4, ModifierFlag::SHIFT_L
+    </autogen>    
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_5, 
+      KeyCode::KEY_5,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_5, ModifierFlag::SHIFT_L
+    </autogen>    
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_6, 
+      KeyCode::KEY_6,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_6, ModifierFlag::SHIFT_L
+    </autogen>    
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_7, 
+      KeyCode::KEY_7,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_7, ModifierFlag::SHIFT_L
+    </autogen>    
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_8, 
+      KeyCode::KEY_8,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_8, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_9, 
+      KeyCode::KEY_9,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_9, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::KEY_0, 
+      KeyCode::KEY_0,
+      KeyCode::VK_NONE,
+      KeyCode::KEY_0, ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Hold [ ] key to { }</name>
+    <appendix>Change brackets on hold</appendix>
+    <identifier>private.bracket_change</identifier>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::BRACKET_LEFT, 
+      KeyCode::BRACKET_LEFT,
+      KeyCode::VK_NONE,
+      KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::BRACKET_RIGHT, 
+      KeyCode::BRACKET_RIGHT,
+      KeyCode::VK_NONE,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Hold - and = to _ and +</name>
+    <appendix>Change brackets on hold</appendix>
+    <identifier>private.equals.to.plus</identifier>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::MINUS, 
+      KeyCode::MINUS,
+      KeyCode::VK_NONE,
+      KeyCode::MINUS, ModifierFlag::SHIFT_L
+    </autogen>
+    <autogen>__HoldingKeyToKey__ 
+      KeyCode::EQUAL, 
+      KeyCode::EQUAL,
+      KeyCode::VK_NONE,
+      KeyCode::EQUAL, ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+
+  <item>
+    <name>Use the correct shift keys.</name>
+    <appendix>Force you to use the correct shift key for the letter being pressed.</appendix>
+    <identifier>private.correct_shift_keys</identifier>
+    <autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::W, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::E, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::R, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::T, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::A, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::G, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::Z, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::X, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::V, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+
+    <autogen>--KeyToKey-- KeyCode::Y,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::U,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::I,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::O,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::P,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::H,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::J,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::K,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::L,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::N,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::M,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::COMMA,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::DOT,       ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+    <autogen>--KeyToKey-- KeyCode::QUOTE,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+  </item>
+
+  <item>
+    <name>Swap symbols for numbers</name>
+    <appendix>Swap behaviour of shift for press of number keys</appendix>
+    <identifier>private.swap_nums</identifier>
+
+    <!-- 0 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::KEY_0, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::SHIFT_L, KeyCode::KEY_0, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::SHIFT_R, KeyCode::KEY_0, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::SHIFT_R | ModifierFlag::COMMAND_L | ModifierFlag::COMMAND_R, KeyCode::KEY_0, ModifierFlag::NONE</autogen>
+
+    <!-- 1 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::NONE, KeyCode::KEY_1, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::SHIFT_L, KeyCode::KEY_1, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::SHIFT_R, KeyCode::KEY_1, ModifierFlag::NONE</autogen>
+
+    <!-- 2 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::SHIFT_L, KeyCode::KEY_2, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::SHIFT_R, KeyCode::KEY_2, ModifierFlag::NONE</autogen>
+
+    <!-- 3 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE, KeyCode::KEY_3, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::SHIFT_L, KeyCode::KEY_3, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::SHIFT_R, KeyCode::KEY_3, ModifierFlag::NONE</autogen>
+
+    <!-- 4 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE, KeyCode::KEY_4, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::SHIFT_L, KeyCode::KEY_4, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::SHIFT_R, KeyCode::KEY_4, ModifierFlag::NONE</autogen>
+
+    <!-- 5 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE, KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::SHIFT_L, KeyCode::KEY_5, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::SHIFT_R, KeyCode::KEY_5, ModifierFlag::NONE</autogen>
+
+    <!-- 6 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::KEY_6, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::SHIFT_L, KeyCode::KEY_6, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::SHIFT_R, KeyCode::KEY_6, ModifierFlag::NONE</autogen>
+
+    <!-- 7 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::SHIFT_L, KeyCode::KEY_7, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::SHIFT_R, KeyCode::KEY_7, ModifierFlag::NONE</autogen>
+
+    <!-- 8 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::SHIFT_L, KeyCode::KEY_8, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::SHIFT_R, KeyCode::KEY_8, ModifierFlag::NONE</autogen>
+
+    <!-- 9 -->
+    <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::SHIFT_L, KeyCode::KEY_9, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::SHIFT_R, KeyCode::KEY_9, ModifierFlag::NONE</autogen>
+  </item>
+
+</root>
