@@ -6,19 +6,18 @@ export IPLAYER_OUTDIR="Documents/iplayer/"
 set -o vi
 export EDITOR='vim'
 
-# cd up dir
-alias ..="cd .."
-
 # Jump to directories
 alias proj="cd ~/Projects/"
 alias dropbox="cd /Volumes/Personal/Dropbox/"
+alias portfolio="cd ~/Documents/web/001_portfolio" 
 
-# Jump to files
+# Open profile
 alias profile="vim ~/.bash_profile"
 
 # Sensible defaults
 alias grep="grep -i"
 alias less="less -N"
+alias py="python3.4"
 
 # HTTP headers
 alias icurl="curl -I"
@@ -30,6 +29,8 @@ alias s='open -a "Sublime Text"'
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 
 # Shortcut commands
+alias ..="cd .."
+alias ...="cd ../.."
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias la="ls -a ${colorflag}" # all files, in long format
@@ -48,10 +49,6 @@ alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles FALSE"
 alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -h now"
 
-# Make and cd into dir
-function mcd() {
-  mkdir -p "$1" && cd "$1";
-}
 
 # Overides
 # ------------------------------------------------------------
@@ -91,12 +88,18 @@ spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
 # httpDebug:  Download a web page and show info on what took time
 httpdebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
 
+# Make and cd into dir
+function mcd() {
+  mkdir -p "$1" && cd "$1";
+}
+
 # shorthand find 
 function f() {
   find . -name "$1"
 }
 
 # Override rm (move it to trash)
+# It will save me one day
 function rm () {
   local path
   for path in "$@"; do
@@ -216,3 +219,8 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # https://github.com/rupa/z
 # installed with brew
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH

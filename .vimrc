@@ -3,7 +3,6 @@ execute pathogen#infect()
 
 
 
-
 "
 " General VI mappings
 " __________________________________________________________________________
@@ -21,6 +20,9 @@ nmap <S-tab> <<
 " Show trailing white space
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
+
+
+
 
 "
 " General VI settings
@@ -56,6 +58,9 @@ set mouse=a
 
 set showcmd
 
+" Directory of back up files
+set backupdir=~/.vim/backup-files
+
 " Disable error sounds
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
@@ -71,10 +76,11 @@ set expandtab
 
 set nobackup
 set nowritebackup
-set noswapfile
 
 " Fewer alerts
 set hidden
+
+" Reload changed files
 set autoread
 
 " Better serach
@@ -86,6 +92,8 @@ set gdefault " use the `g` flag by default.
 
 filetype plugin indent on
 
+" Detect markdown files
+au BufRead,BufNewFile *.md set filetype=markdown
 
 "
 " NERDtree

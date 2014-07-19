@@ -67,15 +67,15 @@ alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
  
 # Location Bindings
 # -----------------------------------
-bind 1:${hyper} ${bottomleft}
+bind 3:${hyper} ${bottomleft}
 bind 2:${hyper} push bottom bar-resize:screenSizeY/2
 bind 3:${hyper} ${bottomright}
-bind 4:${hyper} ${lefthalf}
+bind 6:${hyper} ${lefthalf}
 bind 5:${hyper} ${full}
-bind 6:${hyper} ${righthalf}
-bind 7:${hyper} ${topleft}
+bind 4:${hyper} ${righthalf}
+bind 9:${hyper} ${topleft}
 bind 8:${hyper} push top bar-resize:screenSizeY/2
-bind 9:${hyper} ${topright}
+bind 7:${hyper} ${topright}
 
 bind up:${hyper} ${full}
 bind left:${hyper} chain ${left3quarters} | ${left2thirds} | ${lefthalf} | ${leftthird} | ${leftquarter}

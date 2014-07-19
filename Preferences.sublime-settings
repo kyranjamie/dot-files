@@ -1,0 +1,63 @@
+{
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "ng-controller=\"*",
+			"selector": "punctuation.definition.string"
+		}
+	],
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.min.js",
+		"*.map",
+		"*ext-all.js"
+	],
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/base16-tomorrow.dark (SL).tmTheme",
+	"enable_tab_scrolling": false,
+	"file_exclude_patterns":
+	[
+		"*.sublime-project",
+		"*.sublime-workspace",
+		"*.command",
+		".DS_Store"
+	],
+	"folder_exclude_patterns":
+	[
+		".sass-cache",
+		"eclipse-launch-profiles",
+		"node_modules",
+		".git",
+		".settings",
+		".google_apis",
+		".tmp"
+	],
+	"font_size": 12.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"JsFormat"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"theme": "Soda Dark.sublime-theme",
+	"use_simple_full_screen": true,
+	"vintage_start_in_command_mode": true,
+	"word_wrap": true
+}
