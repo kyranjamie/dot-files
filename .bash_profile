@@ -1,10 +1,11 @@
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/Volumes/Personal/Dropbox/tech/scripts:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export IPLAYER_OUTDIR="Documents/iplayer/"
 
 # Sets to vim mode
 set -o vi
 export EDITOR='vim'
+export BLOCKSIZE=1k
 
 # Jump to directories
 alias proj="cd ~/Projects/"
@@ -27,6 +28,9 @@ alias s='open -a "Sublime Text"'
 
 # Chrome Canary, no web security
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
+
+# todo.sh
+alias t="todo.sh -t"
 
 # Shortcut commands
 alias ..="cd .."
@@ -65,7 +69,7 @@ alias http='sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*
 ## Copy global IP to pasteboard
 alias ip="curl ifconfig.me | pbcopy"
 alias localip="ipconfig getifaddr en1 | pbcopy"
-alias checkport="sudo lsof -i :"
+alias checkport="sudo lsof -i"
 
 ## Display available wifi ports
 alias wifi="airport -s"
@@ -147,6 +151,7 @@ alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
+alias gco="git checkout"
 alias gp="git push"
 alias gpl="git pull"
 alias gd="git diff"
