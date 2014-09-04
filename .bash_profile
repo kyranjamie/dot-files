@@ -46,8 +46,8 @@ alias tree2="tree -L 2"
 alias tree3="tree -L 3"
 
 # Show / hide hidden files
-alias showhidden="defaults write com.apple.Finder AppleShowAllFiles TRUE"
-alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles FALSE"
+alias showhidden="defaults write com.apple.finder AppleShowAllFiles YES"
+alias hidehidden="defaults write com.apple.finder AppleShowAllFiles NO"
 
 # System actions
 alias shutdown="sudo shutdown -h now"
