@@ -1,6 +1,8 @@
+# ENV variables
 export PATH=/usr/local/bin:/Volumes/Personal/Dropbox/tech/scripts:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export IPLAYER_OUTDIR="Documents/iplayer/"
+export GOPATH="$HOME/.go"
 
 # Sets to vim mode
 set -o vi
