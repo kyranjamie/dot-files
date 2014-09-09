@@ -148,7 +148,7 @@ gifify() {
 alias g="git"
 alias commits="git shortlog -sn"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-alias gs="git status"
+alias gs="git status -uno"
 alias ga="git add"
 alias gc="git commit -m"
 alias gco="git checkout"
