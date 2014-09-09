@@ -157,6 +157,12 @@ alias gpl="git pull"
 alias gd="git diff"
 alias ghash="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
 
+# Check for and run git autocompletion
+# https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+if [ -f ~/.git-completion ]; then
+  . ~/.git-completion
+fi
+
 # Git branch details
 function parse_git_dirty() {
   [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
