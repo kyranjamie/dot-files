@@ -8,3 +8,7 @@ default write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
 # Enable key repeat (requires logout)
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Remove Notification Center
+# Requires `killall NotificationCenter` and log out
+sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui KeepAlive -bool false

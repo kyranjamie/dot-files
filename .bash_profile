@@ -21,6 +21,7 @@ alias profile="vim ~/.bash_profile"
 alias grep="grep -i"
 alias less="less -N"
 alias py="python3.4"
+alias sudo="sudo "
 
 # HTTP headers
 alias icurl="curl -I"
@@ -150,7 +151,7 @@ gifify() {
 alias g="git"
 alias commits="git shortlog -sn"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-alias gs="git status -uno"
+alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
 alias gco="git checkout"
