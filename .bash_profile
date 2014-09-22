@@ -4,6 +4,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export IPLAYER_OUTDIR="Documents/iplayer/"
 export GOPATH="$HOME/.go"
 
+# Setting PATH for Python 3.4
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
 # Sets to vim mode
 set -o vi
 export EDITOR='vim'
@@ -234,7 +238,3 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # installed with brew
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
 
-# Setting PATH for Python 3.4
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
-export PATH
