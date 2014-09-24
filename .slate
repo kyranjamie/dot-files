@@ -35,6 +35,7 @@ alias hyper ctrl;shift;alt;cmd
 
 bind help hint ASDFGERXC
 bind g:${hyper} hint ASDFGERXC
+bind f13 hint ASDFGERXC
 # bind g:cmd grid padding:5 0:6,2 1:8,3
  
 # Abstract positions
@@ -82,7 +83,7 @@ bind left:${hyper} chain ${left3quarters} | ${left2thirds} | ${lefthalf} | ${lef
 bind right:${hyper} chain ${right3quarters} | ${right2thirds} | ${righthalf} | ${rightthird} | ${rightquarter}
 
  
-bind z:${hyper} undo
+# bind z:${hyper} undo
 
 # Throws
 # -----------------------------------
@@ -108,5 +109,7 @@ bind s:${hyper} focus 'Skype'
 bind f:${hyper} focus 'Finder'
 bind x:${hyper} focus 'IntelliJ IDEA'
 bind k:${hyper} focus 'KeePassX'
+bind p:${hyper} focus 'Photoshop'
 bind i:${hyper} focus 'Textual'
 bind v:${hyper} focus 'MacVim'
+bind m:${hyper} focus 'Spotify'
