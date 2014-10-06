@@ -15,3 +15,6 @@ sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui 
 
 # Remove window shadow from screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
+
+# Disable .DS_Store files for network file system
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
