@@ -37,7 +37,7 @@ alias s='open -a "Sublime Text"'
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 
 # todo.sh
-alias t="todo.sh -t"
+alias t="todo.sh -T"
 
 # Shortcut commands
 alias ..="cd .."
