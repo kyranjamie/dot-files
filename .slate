@@ -6,9 +6,7 @@ config resizePercentOf screenSize
 config secondsBetweenRepeat 0.1
 config checkDefaultsOnLoad true
 config focusCheckWidthMax 3000
-
 # config menuBarIconHidden true
-
 config windowHintsTopLeftY 100
 config windowHintsShowIcons true
 config windowHintsBackgroundColor 96;96;64;0.5
@@ -18,7 +16,6 @@ config windowHintsSpreadPadding 40
 config windowHintsSpreadSearchWidth 90
 config windowHintsSpreadSearchHeight 50
 config windowHintsIgnoreHiddenWindows false
-
 config switchIconPadding 2
 config switchBackgroundColor 50;53;58;0.7
 config switchSelectedPadding 4
@@ -27,7 +24,8 @@ config switchShowTitles true
 config switchFontSize 11  
 config switchRoundedCornerSize 4
 config undoOps move,resize
- 
+
+
 # Hyper key
 # -----------------------------------
 alias hyper ctrl;shift;alt;cmd
@@ -36,8 +34,8 @@ alias hyper ctrl;shift;alt;cmd
 bind help hint ASDFGERXC
 bind g:${hyper} hint ASDFGERXC
 bind f13 hint ASDFGERXC
-# bind g:cmd grid padding:5 0:6,2 1:8,3
- 
+
+
 # Abstract positions
 # -----------------------------------
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
@@ -57,48 +55,26 @@ alias rightthird corner top-right resize:screenSizeX/3;screenSizeY
 alias rightquarter corner top-right resize:screenSizeX/4;screenSizeY
 
 
-alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
-alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
-alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
-alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
- 
 # Use slate cmd tab
 # -----------------------------------
 # bind tab:cmd switch
  
+
 # Location Bindings
 # -----------------------------------
-bind 3:${hyper} ${bottomleft}
-bind 2:${hyper} push bottom bar-resize:screenSizeY/2
-bind 3:${hyper} ${bottomright}
-bind 6:${hyper} ${lefthalf}
-bind 5:${hyper} ${full}
-bind 4:${hyper} ${righthalf}
-bind 9:${hyper} ${topleft}
-bind 8:${hyper} push top bar-resize:screenSizeY/2
-bind 7:${hyper} ${topright}
-
 bind up:${hyper} ${full}
 bind left:${hyper} chain ${left3quarters} | ${left2thirds} | ${lefthalf} | ${leftthird} | ${leftquarter}
 bind right:${hyper} chain ${right3quarters} | ${right2thirds} | ${righthalf} | ${rightthird} | ${rightquarter}
 
  
-# bind z:${hyper} undo
-
 # Throws
 # -----------------------------------
 bind n:${hyper} throw next
-# bind right:${hyper} throw right resize
-# bind left:${hyper}  throw left  resize
- 
-# bind f:${hyper} throw 1 resize
 bind g:${hyper} throw 0 resize
  
 # Slate
 bind backslash:${hyper} relaunch
 
-# F keys
-# -----------------------------------
 
 # Software
 # -----------------------------------
