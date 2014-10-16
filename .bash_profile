@@ -130,8 +130,13 @@ function rm () {
 # Google Translate API
 # https://github.com/soimort/google-translate-cli
 fr () {
-  X=`trs {=fr} "$1"`;
-  echo "$X" | pbcopy;
+  X=`trans :fr "$1"`;
+#  echo "$X" | pbcopy;
+  echo "$X";
+}
+
+nl () {
+  X=`trans :nl "$1"`;
   echo "$X";
 }
 
