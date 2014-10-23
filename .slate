@@ -32,8 +32,8 @@ alias hyper ctrl;shift;alt;cmd
  
 
 bind help hint ASDFGERXC
-bind g:${hyper} hint ASDFGERXC
-bind f13 hint ASDFGERXC
+# bind g:${hyper} hint ASDFGERXC
+# bind f13 hint ASDFGERXC
 
 
 # Abstract positions

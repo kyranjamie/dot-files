@@ -228,6 +228,24 @@
   </item>
 
   <item>
+    <name>Copy and paste buttons</name>
+    <appendix>Bind copy paste to F13 / 14</appendix>
+    <identifier>private.copy.paste</identifier>
+    <autogen>
+      --KeyToKey--
+      KeyCode::F13,
+      KeyCode::C,
+      ModifierFlag::COMMAND_L
+    </autogen>
+    <autogen>
+      --KeyToKey--
+      KeyCode::F14,
+      KeyCode::V,
+      ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+  
+  <item>
     <name>Use the correct shift keys.</name>
     <appendix>Force you to use the correct shift key for the letter being pressed.</appendix>
     <identifier>private.correct_shift_keys</identifier>
