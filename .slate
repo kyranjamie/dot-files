@@ -76,7 +76,6 @@ bind backslash:${hyper} relaunch
 # Software
 # -----------------------------------
 bind a:${hyper} focus 'Google Chrome'
-bind r:${hyper} focus 'CocoaRestClient'
 bind e:${hyper} focus 'Sublime Text'
 bind r:${hyper} focus 'Robomongo'
 bind s:${hyper} focus 'Skype'
