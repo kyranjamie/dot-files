@@ -6,7 +6,6 @@ config resizePercentOf screenSize
 config secondsBetweenRepeat 0.1
 config checkDefaultsOnLoad true
 config focusCheckWidthMax 3000
-# config menuBarIconHidden true
 config windowHintsTopLeftY 100
 config windowHintsShowIcons true
 config windowHintsBackgroundColor 96;96;64;0.5
@@ -32,7 +31,6 @@ alias hyper ctrl;shift;alt;cmd
  
 
 bind help hint ASDFGERXC
-# bind g:${hyper} hint ASDFGERXC
 # bind f13 hint ASDFGERXC
 
 
@@ -70,7 +68,6 @@ bind right:${hyper} chain ${right3quarters} | ${right2thirds} | ${righthalf} | $
 # Throws
 # -----------------------------------
 bind n:${hyper} throw next
-bind g:${hyper} throw 0 resize
  
 # Slate
 bind backslash:${hyper} relaunch
@@ -81,6 +78,7 @@ bind backslash:${hyper} relaunch
 bind a:${hyper} focus 'Google Chrome'
 bind r:${hyper} focus 'CocoaRestClient'
 bind e:${hyper} focus 'Sublime Text'
+bind r:${hyper} focus 'Robomongo'
 bind s:${hyper} focus 'Skype'
 bind f:${hyper} focus 'Finder'
 bind h:${hyper} focus 'HipChat'
@@ -90,3 +88,4 @@ bind p:${hyper} focus 'Photoshop'
 bind i:${hyper} focus 'Textual'
 bind v:${hyper} focus 'MacVim'
 bind m:${hyper} focus 'VOX'
+
