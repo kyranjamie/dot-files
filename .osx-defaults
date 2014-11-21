@@ -7,7 +7,10 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 default write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
 # Enable key repeat (requires logout)
-defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Enable full keyboard access
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Remove Notification Center
 # Requires `killall NotificationCenter` and log out
