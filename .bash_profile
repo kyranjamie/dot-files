@@ -36,6 +36,9 @@ alias s='open -a "Sublime Text"'
 # Chrome Canary, no web security
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 
+# Autocomplete awscli
+complete -C aws_completer aws
+
 # todo.sh
 alias t="todo.sh -T"
 
