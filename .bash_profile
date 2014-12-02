@@ -114,7 +114,7 @@ function f() {
 
 # Override rm (move it to trash)
 # It will save me one day
-function rm () {
+function del () {
   local path
   for path in "$@"; do
     # ignore any arguments
