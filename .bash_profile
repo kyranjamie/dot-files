@@ -1,5 +1,5 @@
 # ENV variables
-export PATH=/usr/local/bin:/Volumes/Personal/Dropbox/tech/scripts:$PATH
+export PATH=/usr/local/bin:/Users/kyran/Dropbox/tech/scripts:$PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export IPLAYER_OUTDIR="Documents/iplayer/"
 export GOPATH="$HOME/.go"
@@ -9,7 +9,6 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
 
 # Sets to vim mode
-set -o vi
 export EDITOR='vim'
 export BLOCKSIZE=1k
 
