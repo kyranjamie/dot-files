@@ -28,6 +28,9 @@ nmap <silent> <leader>s :set nolist!<CR>
 " General VI settings
 " __________________________________________________________________________
 
+" UTF-8 on
+set encoding=utf-8
+
 " Highlighting
 syntax on
 
