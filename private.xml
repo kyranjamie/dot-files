@@ -103,6 +103,7 @@
  
   <item>
     <name>Right alt to hyper</name>
+    <!-- unless another modifier key is pressed -->
     <appendix>Right alt key remapped to hyper on Macbook keyboard</appendix>
     <identifier>private.alt.to.hyper</identifier>
     <autogen>

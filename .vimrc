@@ -136,7 +136,8 @@ let g:vim_markdown_folding_disabled=1
 " __________________________________________________________________________
 
 " Set theme
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
+colorscheme spacegray
 
 " If the current buffer has never been saved, it will have no name,
 " call the file browser to save it, otherwise just save it.
