@@ -8,7 +8,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
 export GOPATH="$HOME/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
 
-
+export USABILLA_PROJECTS="projects"
 
 
 # Sets to vim mode

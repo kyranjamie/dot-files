@@ -86,5 +86,5 @@ bind k:${hyper} focus 'KeePassX'
 bind p:${hyper} focus 'Photoshop'
 bind i:${hyper} focus 'Textual 5'
 bind v:${hyper} focus 'MacVim'
-bind m:${hyper} focus 'VOX'
+bind m:${hyper} focus 'Spotify'
 
