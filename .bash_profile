@@ -253,4 +253,3 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # installed with brew
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
 
-
