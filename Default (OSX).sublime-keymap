@@ -13,5 +13,12 @@
       { "key": "setting.command_mode", "operand": false },
       { "key": "setting.is_widget", "operand": false }
     ]
+  },
+  {
+    "keys": ["super+shift+o"],
+    "command": "insert_snippet",
+    "args": {
+        "contents": "console.log(${1:}$SELECTION);${0}"
+    }
   }
 ]
