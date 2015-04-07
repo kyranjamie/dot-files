@@ -167,11 +167,14 @@ alias commits="git shortlog -sn"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 alias gs="git status"
 alias ga="git add"
-alias gc="git commit -m"
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gca="git commit --amend"
 alias gb="git branch -a"
 alias gco="git checkout"
 alias gp="git push"
 alias gpl="git pull"
+alias gcp="git cherry-pick"
 alias gd="git diff"
 alias ghash="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
 
@@ -182,9 +185,9 @@ if [ -f ~/.git-completion ]; then
 fi
 
 # Git branch details
-function parse_git_dirty() {
+ function parse_git_dirty() {
   [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
-}
+ }
 function parse_git_branch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
