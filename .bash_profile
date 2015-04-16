@@ -19,6 +19,7 @@ export BLOCKSIZE=1k
 alias proj="cd ~/Projects/"
 alias dropbox="cd /Volumes/Personal/Dropbox/"
 alias portfolio="cd ~/Documents/web/001_portfolio" 
+alias ubjs="cd ~/projects/infrastructure/reverse/usabilla-js/"
 
 # Open profile
 alias profile="vim ~/.bash_profile"
@@ -172,6 +173,7 @@ alias gcm="git commit -m"
 alias gca="git commit --amend"
 alias gb="git branch -a"
 alias gco="git checkout"
+alias gm="git merge"
 alias gp="git push"
 alias gpl="git pull"
 alias gcp="git cherry-pick"
@@ -185,11 +187,12 @@ if [ -f ~/.git-completion ]; then
 fi
 
 # Git branch details
- function parse_git_dirty() {
+function parse_git_dirty() {
   [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
- }
+}
+
 function parse_git_branch() {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/"
 }
 
 # Git autocompletion when aliased to `g`
