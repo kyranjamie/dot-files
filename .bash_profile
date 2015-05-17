@@ -21,17 +21,11 @@ alias dropbox="cd /Volumes/Personal/Dropbox/"
 alias portfolio="cd ~/Documents/web/001_portfolio" 
 alias ubjs="cd ~/projects/infrastructure/reverse/usabilla-js/"
 
-# Open profile
-alias profile="vim ~/.bash_profile"
-
 # Sensible defaults
 alias grep="grep -i"
 alias less="less -N"
 alias py="python3.4"
 alias sudo="sudo "
-
-# HTTP headers
-alias icurl="curl -I"
 
 # Open with...
 alias s='open -a "Sublime Text"'
@@ -39,11 +33,13 @@ alias s='open -a "Sublime Text"'
 # Chrome Canary, no web security
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 
+alias vssh="cd ~/projects/infrastructure && vagrant ssh"
+
 # Autocomplete awscli
 complete -C aws_completer aws
 
 # todo.sh
-alias t="todo.sh -T"
+alias t="task"
 
 # Shortcut commands
 alias ..="cd .."
@@ -113,6 +109,10 @@ function mcd() {
 # shorthand find 
 function f() {
   find . -name "$1"
+}
+
+function markdown() {
+  pandoc "$1" | lynx -stdin -vikeys
 }
 
 # Override rm (move it to trash)
