@@ -34,6 +34,7 @@ alias s='open -a "Sublime Text"'
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 
 alias vssh="cd ~/projects/infrastructure && vagrant ssh"
+alias vagup="cd ~/projects/infrastructure && vagrant up && cd -"
 
 # Autocomplete awscli
 complete -C aws_completer aws

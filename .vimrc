@@ -129,7 +129,12 @@ let g:netrw_liststyle=3
 let g:vim_markdown_folding_disabled=1
 
 
+"
+" Font settings
+" __________________________________________________________________________
 
+
+set guifont=Source_Code_Pro
 
 "
 " Colour themes
@@ -137,7 +142,9 @@ let g:vim_markdown_folding_disabled=1
 
 " Set theme
 "colorscheme Tomorrow-Night
-colorscheme spacegray
+" colorscheme spacegray
+set t_Co=256
+colorscheme PaperColor
 
 " If the current buffer has never been saved, it will have no name,
 " call the file browser to save it, otherwise just save it.
