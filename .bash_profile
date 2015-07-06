@@ -1,5 +1,5 @@
 # ENV variables
-export PATH=/usr/local/bin:/Users/kyran/Dropbox/tech/scripts:$PATH
+export PATH="/usr/local/bin:/Users/kyran/Dropbox/tech/scripts:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
@@ -45,6 +45,8 @@ alias t="task"
 # Shortcut commands
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
+alias --="cd -"
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias la="ls -a ${colorflag}" # all files, in long format
