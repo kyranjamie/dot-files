@@ -46,7 +46,6 @@ alias t="task"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias --="cd -"
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias la="ls -a ${colorflag}" # all files, in long format
@@ -89,7 +88,7 @@ alias wifi="airport -s"
 alias btcauth="curl http://bitcoin-otc.com/otps/DA2EEEBE15ABADED | gpg -d | pbcopy"
 
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
-alias flushdns='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
+alias flushdns='sudo discoveryutil udnsflushcaches' # flushDNS:     Flush out the DNS Cache
 alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
 alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # lsockU:       Display only open UDP sockets
 alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # lsockT:       Display only open TCP sockets
