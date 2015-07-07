@@ -164,6 +164,19 @@ gifify() {
   fi
 }
 
+chkinvalidation() {
+  if which aws >/dev/null; then
+    if [[ -n "$1" ]]; then
+      aws cloudfront get-invalidation --distribution-id E18TOH3LDCP8AO --id $1
+    else
+      echo "Fool! Requires an invalidationID to check progress."
+    fi
+  else
+    echo "You need the aws cli tool installed"
+    echo "Run $ pip install awscli"
+  fi
+}
+
 # Git
 alias g="git"
 alias commits="git shortlog -sn"
