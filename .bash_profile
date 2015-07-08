@@ -167,9 +167,21 @@ gifify() {
 chkinvalidation() {
   if which aws >/dev/null; then
     if [[ -n "$1" ]]; then
-      aws cloudfront get-invalidation --distribution-id E18TOH3LDCP8AO --id $1
+      local STATUS
+      local ID=$1
+      checkStatus() {
+        STATUS="$(aws cloudfront get-invalidation --distribution-id E18TOH3LDCP8AO --id $ID | sed -n 's/.*"Status": "\(.*\)",/\1/p')"
+        sleep 20
+        echo $STATUS
+      }
+      checkStatus
+      while [ "$STATUS" != "Completed " ]; do
+        checkStatus
+      done
+      osascript -e 'display notification "Invalidation for object:'${ID}' complete." with title "Invalidation complete!"'
+      echo "Invalidation completed!"
     else
-      echo "Fool! Requires an invalidationID to check progress."
+      echo "Fool! Requires an invalidationID to check progress." 
     fi
   else
     echo "You need the aws cli tool installed"
