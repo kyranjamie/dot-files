@@ -47,7 +47,7 @@ alias restart="sudo shutdown -h now"
 
 # Syntax highlighted cat
 # Pygments first - "sudo easy_install Pygments"
-alias cat='pygmentize -O style=monokai -f console256 -g'
+alias ccat='pygmentize -O style=monokai -f console256 -g'
 
 # Info
 alias http='sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'

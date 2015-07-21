@@ -1,6 +1,14 @@
-
 # spotlight: Search for a file using MacOS Spotlight's metadata
 spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
+
+cdf() {
+    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    if [ "$target" != "" ]; then
+        cd "$target"; pwd
+    else
+        echo 'No Finder window found' >&2
+    fi
+}
 
 # httpDebug:  Download a web page and show info on what took time
 httpdebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
