@@ -1,7 +1,8 @@
 # ENV variables
 export PATH="/usr/local/bin:/Users/kyran/Dropbox/tech/scripts:$PATH"
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH="$HOME/.bin:$PATH"
+export PATH="/opt/local/sbin:$PATH"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
 export PATH
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
