@@ -32,11 +32,12 @@ if [ -f ~/.git-completion ]; then
   # Add git completion to aliases
   __git_complete g __git_main
   __git_complete gco _git_checkout
-  __git_complete gm __git_merge
+  __git_complete gm _git_merge
   __git_complete gp _git_push
   __git_complete gpl _git_pull
 fi
 
+source ~/.bin/arcanist/resources/shell/bash-completion
 
 # init z 
 # https://github.com/rupa/z
