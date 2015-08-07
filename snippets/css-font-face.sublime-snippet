@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[      
+@font-face {
+  font-family:'${1}';
+  src: url("/fonts/sourcecodepro-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/sourcecodepro-regular-webfont.woff") format("woff"),
+    url("/fonts/sourcecodepro-regular-webfont.ttf") format("truetype"),
+    url("/fonts/sourcecodepro-regular-webfont.svg#SourceCodePro") format("svg");
+  font-weight:normal;
+  font-style:normal
+}
+]]></content>
+    <tabTrigger>@ff</tabTrigger>
+    <scope>source.css, source.scss, source.less</scope>
+</snippet>

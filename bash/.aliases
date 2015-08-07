@@ -1,80 +1,111 @@
-# Jump to directories
+# 
+# Navigation
+# ----------------------------------------------------------------------
 alias proj="cd ~/Projects/"
 alias dropbox="cd /Volumes/Personal/Dropbox/"
 alias portfolio="cd ~/Documents/web/001_portfolio" 
-alias ubjs="cd ~/projects/infrastructure/reverse/usabilla-js/"
+alias ubjs="cd ~/projects/infrastructure/reverse/usabilla-js/usabilla.js"
+alias themes="cd ~/projects/infrastructure/reverse/api/application/src/Usabilla/FeedbackBundle/Themes/"
 
-# Sensible defaults
-alias grep="grep -i"
-alias less="less -N"
-alias py="python3.4"
-alias sudo="sudo "
-
-# Open with...
-alias s='open -a "Sublime Text"'
-
-# Chrome Canary, no web security
-alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
-
-alias vssh="cd ~/projects/infrastructure && vagrant ssh"
-alias vagup="cd ~/projects/infrastructure && vagrant up && cd -"
-
-
-# todo.sh
-alias t="task"
-
-# Shortcut commands
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+
+
+#
+# Directory information
+# ----------------------------------------------------------------------
 colorflag="-G"
 alias ls="command ls ${colorflag}"
-alias la="ls -a ${colorflag}" # all files, in long format
-alias ll="ls -la ${colorflag}" # all files inc dotfiles, in long format
-alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
+alias la="ls -a ${colorflag}"
+alias ll="ls -la ${colorflag}"
+alias lsd='ls -lF ${colorflag} | grep "^d"'
 alias cls="clear"
 alias tree1="tree -L 1"
 alias tree2="tree -L 2"
 alias tree3="tree -L 3"
 
-# Show / hide hidden files
+
+#
+# Software
+# ----------------------------------------------------------------------
+alias s='open -a "Sublime Text"'
+alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
+alias t="task"
+# Defaults
+alias grep="grep -i"
+alias less="less -N"
+alias py="python3.4"
+alias sudo="sudo "
+
+
+#
+# Development
+# ----------------------------------------------------------------------
+
+alias vssh="cd ~/projects/infrastructure && vagrant ssh"
+alias vagup="cd ~/projects/infrastructure && vagrant up && cd -"
+
+
+#
+# System config
+# ----------------------------------------------------------------------
+
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles YES"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles NO"
 
-# System actions
 alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -h now"
 
-# Syntax highlighted cat
 # Pygments first - "sudo easy_install Pygments"
 alias ccat='pygmentize -O style=monokai -f console256 -g'
 
-# Info
-alias http='sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'
 
-## Copy global IP to pasteboard
+#
+# System Info
+# ----------------------------------------------------------------------
+
 alias ip="curl ifconfig.me | pbcopy"
 alias localip="ipconfig getifaddr en1 | pbcopy"
-alias checkport="sudo lsof -i"
 
-## Display available wifi ports
+alias http='sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'
+alias checkport="sudo lsof -i"
 alias wifi="airport -s"
 
 alias btcauth="curl http://bitcoin-otc.com/otps/DA2EEEBE15ABADED | gpg -d | pbcopy"
 
-alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
-alias flushdns='sudo discoveryutil udnsflushcaches' # flushDNS:     Flush out the DNS Cache
-alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
-alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   # lsockU:       Display only open UDP sockets
-alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   # lsockT:       Display only open TCP sockets
-alias en0='ipconfig getpacket en0'                  # ipInfo0:      Get info on connections for en0
-alias en1='ipconfig getpacket en1'                  # ipInfo1:      Get info on connections for en1
-alias openports='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
-alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IPs
+# Show all open TCP/IP sockets
+alias netCons='lsof -i' 
+
+# Flush out the DNS Cache
+alias flushdns='sudo discoveryutil udnsflushcaches' 
+
+# Display open sockets
+alias lsock='sudo /usr/sbin/lsof -i -P'             
+
+# Display only open UDP sockets
+alias lsockU='sudo /usr/sbin/lsof -nP | grep UDP'   
+
+# Display only open TCP sockets
+alias lsockT='sudo /usr/sbin/lsof -nP | grep TCP'   
+
+# Get info on connections for en0
+alias en0='ipconfig getpacket en0'                  
+
+# Get info on connections for en1
+alias en1='ipconfig getpacket en1'                  
+
+# All listening connections
+alias openports='sudo lsof -i | grep LISTEN'        
+
+# All ipfw rules inc/ blocked IPs
+alias showBlocked='sudo ipfw list'                  
 
 
-
+#
 # Git
+# ----------------------------------------------------------------------
+
 alias g="git"
 alias commits="git shortlog -sn"
 alias gl="git log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
