@@ -1,6 +1,7 @@
 # 
 # Navigation
 # ----------------------------------------------------------------------
+
 alias proj="cd ~/Projects/"
 alias dropbox="cd /Volumes/Personal/Dropbox/"
 alias portfolio="cd ~/Documents/web/001_portfolio" 
@@ -15,6 +16,7 @@ alias ....="cd ../../.."
 #
 # Directory information
 # ----------------------------------------------------------------------
+
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias la="ls -a ${colorflag}"
@@ -29,6 +31,7 @@ alias tree3="tree -L 3"
 #
 # Software
 # ----------------------------------------------------------------------
+
 alias s='open -a "Sublime Text"'
 alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
 alias t="task"
