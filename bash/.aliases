@@ -5,7 +5,7 @@
 alias proj="cd ~/Projects/"
 alias dropbox="cd /Volumes/Personal/Dropbox/"
 alias portfolio="cd ~/Documents/web/001_portfolio" 
-alias ubjs="cd ~/projects/infrastructure/reverse/usabilla-js/usabilla.js"
+alias ubjs="cd ~/projects/infrastructure/reverse/usabilla.js/usabilla.js"
 alias themes="cd ~/projects/infrastructure/reverse/api/application/src/Usabilla/FeedbackBundle/Themes/"
 
 alias ..="cd .."
