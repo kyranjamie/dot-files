@@ -1,6 +1,20 @@
-" Load Pathogen
-execute pathogen#infect()
+" Load plug
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'scrooloose/syntastic'
+Plug 'pangloss/vim-javascript'
+Plug 'fatih/vim-go'
+Plug 'mattn/emmet-vim'
+Plug 'othree/html5.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'statianzo/vim-jade'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'Valloric/YouCompleteMe'
 
+call plug#end()
 
 
 "
@@ -134,7 +148,7 @@ let g:vim_markdown_folding_disabled=1
 " __________________________________________________________________________
 
 
-set guifont=Source_Code_Pro
+set guifont=Source_Code_Pro_for_Powerline
 
 "
 " Colour themes
@@ -145,6 +159,7 @@ set guifont=Source_Code_Pro
 " colorscheme spacegray
 set t_Co=256
 colorscheme PaperColor
+set background=dark
 
 " If the current buffer has never been saved, it will have no name,
 " call the file browser to save it, otherwise just save it.
@@ -158,3 +173,6 @@ command -nargs=0 -bar Update if &modified
 nnoremap <silent> <C-S> :<C-u>Update<CR>
 
 let g:gitgutter_realtime = 1
+
+
+let g:airline_powerline_fonts = 1
