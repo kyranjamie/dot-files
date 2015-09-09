@@ -1,4 +1,7 @@
-" Load plug
+"
+" Define plugins 
+" __________________________________________________________________________
+ 
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/syntastic'
@@ -8,13 +11,19 @@ Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'statianzo/vim-jade'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'Valloric/YouCompleteMe'
-
+Plug 'editorconfig/editorconfig-vim'
+Plug 'mhinz/vim-startify'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'chase/vim-ansible-yaml'
+Plug 'qualiabyte/vim-colorstepper'
 call plug#end()
+
+
 
 
 "
@@ -112,6 +121,9 @@ filetype plugin indent on
 " Detect markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
 
+
+
+
 "
 " NERDtree
 " https://github.com/scrooloose/nerdtree
@@ -155,24 +167,18 @@ set guifont=Source_Code_Pro_for_Powerline
 " __________________________________________________________________________
 
 " Set theme
-"colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
 " colorscheme spacegray
 set t_Co=256
 colorscheme PaperColor
 set background=dark
 
-" If the current buffer has never been saved, it will have no name,
-" call the file browser to save it, otherwise just save it.
-command -nargs=0 -bar Update if &modified 
-                           \|    if empty(bufname('%'))
-                           \|        browse confirm write
-                           \|    else
-                           \|        confirm write
-                           \|    endif
-                           \|endif
-nnoremap <silent> <C-S> :<C-u>Update<CR>
-
 let g:gitgutter_realtime = 1
 
 
 let g:airline_powerline_fonts = 1
+
+" ColorStepper Keys
+nmap <F6> <Plug>ColorstepPrev
+nmap <F7> <Plug>ColorstepNext
+nmap <S-F7> <Plug>ColorstepReload

@@ -28,3 +28,6 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Privacy
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
+# Open the dock faster
+defaults write com.apple.dock autohide-time-modifier -float 0.35; killall Dock;
