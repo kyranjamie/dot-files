@@ -5,8 +5,13 @@
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/syntastic'
+Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'fatih/vim-go'
+Plug 'kchmck/vim-coffee-script'
+Plug 'groenewege/vim-less'
+Plug 'cakebaker/scss-syntax.vim'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/nerdtree'
@@ -16,11 +21,14 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'statianzo/vim-jade'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'jelera/vim-javascript-syntax'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mhinz/vim-startify'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'chase/vim-ansible-yaml'
-Plug 'qualiabyte/vim-colorstepper'
+Plug 'mileszs/ack.vim'
+" Plug 'qualiabyte/vim-colorstepper'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 
@@ -142,7 +150,7 @@ let NERDTreeShowHidden=1
 
 " map leader to toggle NERDtree
 " map <leader>n :NERDTreeToggle<CR>
-map <leader>n <plug>NERDTreeTabsToggle<CR>
+map <leader>n <plug>NERDTreeToggle<CR>
 
 " Ctrl n to toggle sidebar
 map <C-n> :NERDTreeToggle<CR>
@@ -174,11 +182,9 @@ colorscheme PaperColor
 set background=dark
 
 let g:gitgutter_realtime = 1
-
-
 let g:airline_powerline_fonts = 1
 
-" ColorStepper Keys
-nmap <F6> <Plug>ColorstepPrev
-nmap <F7> <Plug>ColorstepNext
-nmap <S-F7> <Plug>ColorstepReload
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#A4E57E'
+
+

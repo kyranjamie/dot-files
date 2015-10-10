@@ -20,7 +20,7 @@ alias ....="cd ../../.."
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias la="ls -a ${colorflag}"
-alias ll="ls -la ${colorflag}"
+alias ll="ls -lah ${colorflag}"
 alias lsd='ls -lF ${colorflag} | grep "^d"'
 alias cls="clear"
 alias tree1="tree -L 1"
@@ -33,7 +33,10 @@ alias tree3="tree -L 3"
 # ----------------------------------------------------------------------
 
 alias s='open -a "Sublime Text"'
-alias chromex="open -a /Applications/Google\ Chrome\ Canary.app --args --disable-web-security"
+alias photoshop='open -a "Adobe Photoshop CC 2015"'
+alias illustrator='open -a "Adobe Illustrator CS6"'
+alias sketch='open -a "Sketch"'
+alias chromex='open -a "Google Chrome Canary" --args --disable-web-security'
 alias t="task"
 # Defaults
 alias grep="grep -i"
@@ -46,7 +49,7 @@ alias sudo="sudo "
 # Development
 # ----------------------------------------------------------------------
 
-alias vssh="cd ~/projects/infrastructure && vagrant ssh"
+alias vssh="cd ~/projects/infrastructure && vagrant ssh -- -x"
 alias vagup="cd ~/projects/infrastructure && vagrant up && cd -"
 
 
@@ -81,7 +84,7 @@ alias btcauth="curl http://bitcoin-otc.com/otps/DA2EEEBE15ABADED | gpg -d | pbco
 alias netCons='lsof -i' 
 
 # Flush out the DNS Cache
-alias flushdns='sudo discoveryutil udnsflushcaches' 
+alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;' 
 
 # Display open sockets
 alias lsock='sudo /usr/sbin/lsof -i -P'             
@@ -110,7 +113,6 @@ alias showBlocked='sudo ipfw list'
 # ----------------------------------------------------------------------
 
 alias g="git"
-alias commits="git shortlog -sn"
 alias gl="git log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 alias gs="git status"
 alias ga="git add"
@@ -126,3 +128,5 @@ alias gpl="git pull"
 alias gcp="git cherry-pick"
 alias gd="git diff"
 alias ghash="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
+alias conflicts="git diff --name-only | uniq"
+alias commits="git shortlog -sn"

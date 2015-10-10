@@ -40,6 +40,8 @@ fi
 
 source ~/.bin/arcanist/resources/shell/bash-completion
 
+source ~/.nvm/nvm.sh
+
 # init z 
 # https://github.com/rupa/z
 # installed with brew
