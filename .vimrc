@@ -145,6 +145,9 @@ au BufRead,BufNewFile *.md set filetype=markdown
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Close NERDtree if it's the only window left open in buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 " Show hidden files by default / Shift+i
 let NERDTreeShowHidden=1
 
