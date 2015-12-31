@@ -46,4 +46,4 @@ source ~/.nvm/nvm.sh
 # init z 
 # https://github.com/rupa/z
 # installed with brew
-. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+. `brew --prefix`/etc/profile.d/z.sh
