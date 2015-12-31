@@ -1,0 +1,43 @@
+[user]
+	name = kyran
+    email = kyran@usabilla.com
+
+[push]
+	default = simple
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+	cf = !sh -c \"git diff --name-only | uniq | xargs s\"\n
+
+[core]
+	pager = less -R
+	excludesfile = ~/.gitignore
+
+[github]
+	user = kyranjamie
+
+[ghi]
+	token = !security find-internet-password -a kyranjamie -s github.com -l 'ghi token' -w
+
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

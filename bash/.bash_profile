@@ -11,6 +11,7 @@ export GOPATH="$HOME/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
 
 export USABILLA_PROJECTS="projects"
+export UBJS="projects/infrastructure/reverse/usabilla.js/usabilla.js"
 
 
 # Sets to vim mode
