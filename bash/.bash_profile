@@ -13,9 +13,13 @@ export IPLAYER_OUTDIR="Documents/iplayer/"
 export USABILLA_PROJECTS="projects"
 export UBJS="projects/infrastructure/reverse/usabilla.js/usabilla.js"
 
+# Docker stuff
+export DEVIP=$(docker-machine ip default)
+export DOCKERINFRA="$HOME/projects/infrastructure"
+eval `docker-machine env default`
 
 # Sets to vim mode
-export EDITOR='vim'
+export EDITOR="vim"
 export BLOCKSIZE=1k
 
 for file in ~/.{aliases,functions,bash_prompt}; do

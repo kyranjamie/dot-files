@@ -10,6 +10,8 @@ ln -s ~/dev/dot-files/.inputrc ~/
 ln -s ~/dev/dot-files/.slate ~/
 ln -s ~/dev/dot-files/.tmux.conf ~/
 
+ln -s ~/dev/dot-files/.gitconfig ~/
+
 ln -s ~/dev/dot-files/.vimrc ~/
 ln -s ~/dev/dot-files/.slate ~/
 

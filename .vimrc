@@ -29,6 +29,7 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'mileszs/ack.vim'
 " Plug 'qualiabyte/vim-colorstepper'
 Plug 'Yggdroot/indentLine'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 
@@ -180,9 +181,9 @@ set guifont=Source_Code_Pro_for_Powerline
 " Set theme
 " colorscheme Tomorrow-Night
 " colorscheme spacegray
+syntax enable
 set t_Co=256
-colorscheme PaperColor
-set background=dark
+" colorscheme solarized
 
 let g:gitgutter_realtime = 1
 let g:airline_powerline_fonts = 1
