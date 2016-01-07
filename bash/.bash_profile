@@ -1,6 +1,7 @@
 # ENV variables
 export PATH="/usr/local/bin:/Users/kyran/Dropbox/tech/scripts:$PATH"
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin/arcanist/bin:$PATH"
 export PATH="/opt/local/sbin:$PATH"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
 export PATH="/usr/local/php5/bin:$PATH"

@@ -27,6 +27,11 @@ function markdown() {
   pandoc "$1" | lynx -stdin -vikeys
 }
 
+# Docker
+function dkr() {
+  docker exec -it "$1"
+}
+
 # Override rm (move it to trash)
 # It will save me one day
 function del () {

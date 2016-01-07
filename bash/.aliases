@@ -50,9 +50,13 @@ alias sudo="sudo "
 # Development
 # ----------------------------------------------------------------------
 
+# Vagrant
 alias vssh="cd ~/projects/infrastructure && vagrant ssh -- -x"
 alias vagup="cd ~/projects/infrastructure && vagrant up && cd -"
 
+# Docker
+alias dk="docker"
+alias dkstart="docker-machine start default"
 
 #
 # System config
