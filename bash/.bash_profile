@@ -45,6 +45,7 @@ if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
   # Add git completion to aliases
   __git_complete g __git_main
   __git_complete gco _git_checkout
+  __git_complete gb _git_branch
   __git_complete gm _git_merge
   __git_complete gp _git_push
   __git_complete gpl _git_pull
