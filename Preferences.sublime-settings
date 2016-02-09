@@ -25,9 +25,6 @@
 		"*.map",
 		"*ext-all.js"
 	],
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
 	[
 		"*.sublime-project",
@@ -39,15 +36,11 @@
 	[
 		".sass-cache",
 		"eclipse-launch-profiles",
-		"node_modules",
 		".git",
 		".settings",
 		".google_apis",
 		".tmp"
 	],
-	"font_face": "Inconsolata-dz for Powerline",
-	"font_size": 12.0,
-	"highlight_line": true,
 	"ignored_packages":
 	[
 		"JsFormat"
@@ -57,8 +50,16 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"word_wrap": true,
+	"enable_tab_scrolling": false,
+	"bold_folder_labels": true,
+	"font_face": "Inconsolata-dz for Powerline",
+	"font_size": 12.0,
+	"highlight_line": true,
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"material_theme_compact_sidebar": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
@@ -68,9 +69,7 @@
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_encoding": true,
-	"theme": "Material-Theme-Darker.sublime-theme",
-	"typescript_plugin_tsc_version": "1.7.3",
+	"typescript_plugin_tsc_version": "1.7.5",
 	"use_simple_full_screen": true,
-	"vintage_start_in_command_mode": true,
-	"word_wrap": true
+	"vintage_start_in_command_mode": true
 }

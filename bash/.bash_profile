@@ -66,3 +66,5 @@ source ~/.nvm/nvm.sh
 # https://github.com/rupa/z
 # installed with brew
 . `brew --prefix`/etc/profile.d/z.sh
+export DEVIP=$(docker-machine ip default)
+eval `docker-machine env default`
