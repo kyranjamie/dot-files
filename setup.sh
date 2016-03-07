@@ -1,7 +1,7 @@
 # Set up script
+ln -s ~/dev/dot-files/shell/.aliases ~/
 
 ln -s ~/dev/dot-files/bash/.bash_profile ~/
-ln -s ~/dev/dot-files/bash/.aliases ~/
 ln -s ~/dev/dot-files/bash/.bash_prompt ~/
 ln -s ~/dev/dot-files/bash/.functions ~/
 

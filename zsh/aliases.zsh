@@ -3,10 +3,7 @@
 # ----------------------------------------------------------------------
 
 alias proj="cd ~/Projects/"
-alias dropbox="cd /Volumes/Personal/Dropbox/"
-alias portfolio="cd ~/Documents/web/001_portfolio" 
-alias ubjs="cd ~/projects/infrastructure/reverse/usabilla.js/usabilla.js"
-alias themes="cd ~/projects/infrastructure/reverse/api/application/src/Usabilla/FeedbackBundle/Themes/"
+alias dropbox="cd ~/Dropbox/"
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -44,6 +41,7 @@ alias grep='grep -i'
 alias less='less -N'
 alias py='python3.4'
 alias sudo="sudo "
+alias sz='source ~/.zshrc'
 
 
 #

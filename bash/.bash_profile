@@ -58,12 +58,3 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   GIT_PROMPT_ONLY_IN_REPO=1
   . $(brew --prefix)/etc/bash_completion
 fi
-
-source ~/.nvm/nvm.sh
-
-# init z 
-# https://github.com/rupa/z
-# installed with brew
-. `brew --prefix`/etc/profile.d/z.sh
-export DEVIP=$(docker-machine ip default)
-eval `docker-machine env default`
