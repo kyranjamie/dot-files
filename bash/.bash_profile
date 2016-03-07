@@ -5,7 +5,6 @@ export PATH="$HOME/.bin/arcanist/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 export PATH="/opt/local/sbin:$PATH"
 export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
-export PATH="/usr/local/php5/bin:$PATH"
 export PATH
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home

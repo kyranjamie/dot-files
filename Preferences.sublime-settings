@@ -37,6 +37,7 @@
 	],
 	"folder_exclude_patterns":
 	[
+		"node_modules",
 		".sass-cache",
 		"eclipse-launch-profiles",
 		".git",
@@ -45,7 +46,7 @@
 		".tmp"
 	],
 	"font_face": "Inconsolata-dz for Powerline",
-	"font_size": 12.0,
+	"font_size": 11.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -67,8 +68,9 @@
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_encoding": true,
+	"node_path": "/Users/kyran/.nvm/versions/node/v5.7.0/bin/node",
 	"theme": "Material-Theme-Darker.sublime-theme",
-	"typescript_plugin_tsc_version": "1.7.3",
+	"typescript_plugin_tsc_version": "1.7.5",
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": true
