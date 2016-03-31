@@ -30,6 +30,7 @@
 [core]
 	pager = less -R
 	excludesfile = ~/.gitignore
+	editor = vim
 
 [github]
 	user = kyranjamie

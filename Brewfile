@@ -13,6 +13,7 @@ brew 'node'
 brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
+brew 'diff-so-fancy'
 
 cask 'atom'
 cask 'firefox'

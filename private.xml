@@ -88,7 +88,6 @@
     <autogen>__KeyToKey__ KeyCode::BACKQUOTE, KeyCode::DANISH_DOLLAR</autogen>
     <autogen>__KeyToKey__ KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE</autogen>
   </item>
-
   <item>
     <name>Hold ESC to open iTerm (COMMMAND + ESC)</name>
     <appendix>iTerm show / hide is bound to CMD + ESC. Immitate this action on ESC hold.</appendix>
