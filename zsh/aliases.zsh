@@ -77,7 +77,7 @@ alias ccat='pygmentize -O style=monokai -f console256 -g'
 alias ip="curl ifconfig.me | pbcopy"
 alias localip="ipconfig getifaddr en1 | pbcopy"
 
-alias http='sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'
+# alias http='sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E "Host\: .*|GET \/.*"'
 alias checkport="sudo lsof -i"
 alias wifi="airport -s"
 
@@ -118,12 +118,14 @@ alias showBlocked='sudo ipfw list'
 alias g="git"
 alias gl="git log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 alias gs="git status"
+alias gsp="git stash pop"
+alias gsh="git stash"
 alias ga="git add"
+alias gap="git add -p"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gca="git commit --amend"
 alias gb="git branch"
-alias gba="git branch -a"
 alias gco="git checkout"
 alias gm="git merge"
 alias gf="git fetch"

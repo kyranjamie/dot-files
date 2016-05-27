@@ -59,7 +59,12 @@ fr () {
 }
 
 nl () {
-  X=`trans :nl "$1"`;
+  X=`trans nl "$1"`;
+  echo "$X";
+}
+
+nlen () {
+  X=`trans nl:en "$1"`;
   echo "$X";
 }
 

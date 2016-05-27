@@ -43,7 +43,7 @@
 		".git",
 		".settings",
 		".google_apis",
-		".tmp"
+		".idea"
 	],
 	"font_face": "Inconsolata-dz for Powerline",
 	"font_size": 12.0,
@@ -64,7 +64,7 @@
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
-	"node_path": "/Users/kyran/.nvm/versions/node/v5.7.0/bin/node",
+	"node_path": "/Users/kyran/.nvm/versions/node/v5.10.1/bin/node",
 	"overlay_scroll_bars": "enabled",
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
