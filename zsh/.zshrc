@@ -12,6 +12,8 @@ export IPLAYER_OUTDIR="Documents/iplayer/"
 export USABILLA_PROJECTS="projects/"
 export UBJS="projects/usabilla.js/usabilla.js"
 
+export ACK_OPTIONS="--ignore-case --literal"
+
 
 # Docker stuff
 # export DEVIP=$(docker-machine ip default)

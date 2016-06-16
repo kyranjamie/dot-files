@@ -43,7 +43,8 @@
 		".git",
 		".settings",
 		".google_apis",
-		".idea"
+		".idea",
+		".tmp"
 	],
 	"font_face": "Inconsolata-dz for Powerline",
 	"font_size": 12.0,
