@@ -110,6 +110,9 @@ alias openports='sudo lsof -i | grep LISTEN'
 # All ipfw rules inc/ blocked IPs
 alias showBlocked='sudo ipfw list'                  
 
+# Fetch IP info
+alias ipinfo="curl ipinfo.io"
+
 
 #
 # Git
