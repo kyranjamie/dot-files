@@ -133,9 +133,16 @@ alias gco="git checkout"
 alias gm="git merge"
 alias gf="git fetch"
 alias gp="git push"
+alias gpoh="git push origin HEAD"
 alias gpl="git pull"
 alias gcp="git cherry-pick"
 alias gd="git diff --color | diff-so-fancy"
 alias ghash="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
 alias conflicts="git diff --name-only | uniq"
 alias commits="git shortlog -sn"
+
+
+
+
+
+

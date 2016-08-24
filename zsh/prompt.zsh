@@ -1,5 +1,3 @@
-
-
 # Modify the colors and symbols in these variables as desired.
 GIT_PROMPT_SYMBOL="%{$fg[blue]%}±"
 GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$reset_color%}"
@@ -66,8 +64,20 @@ git_prompt_string() {
   [ -n "$git_where" ] && print "$GIT_PROMPT_SYMBOL$(parse_git_state)$GIT_PROMPT_PREFIX%{$fg[yellow]%}%{%B%}${git_where#(refs/heads/|tags/)}%{%b%}$GIT_PROMPT_SUFFIX"
 }
 
-# execute every cmd
+check_unused_alias() {
+  # Previous cmd
+  local command=$history[$[HISTCMD-1]]
+  # Loop keys for matching command
+  for c in ${(k)aliases[(R)$command]}; do 
+    echo "\nYou typed $fg[red]$command$reset_color but you could have typed $fg[green]$c"
+  done
+}
+
+# Execute every cmd
 precmd() {
+
+  check_unused_alias
+
   PROMPT_NAME="$red%{%B%}%n%{%b%}$reset"
   PROMPT_DIR="$yellow%{%B%}${PWD/#$HOME/~}%{%b%}$reset"
   local i_left
