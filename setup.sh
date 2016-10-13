@@ -1,9 +1,9 @@
 # Set up script
-ln -s ~/dev/dot-files/shell/.aliases ~/
 
-ln -s ~/dev/dot-files/bash/.bash_profile ~/
-ln -s ~/dev/dot-files/bash/.bash_prompt ~/
-ln -s ~/dev/dot-files/bash/.functions ~/
+ln -s ~/dev/dot-files/zsh/.aliases.zsh ~/
+ln -s ~/dev/dot-files/zsh/.zshrc ~/
+ln -s ~/dev/dot-files/zsh/.functions.zsh ~/
+ln -s ~/dev/dot-files/zsh/.prompt.zsh ~/
 
 
 ln -s ~/dev/dot-files/.inputrc ~/
@@ -13,7 +13,6 @@ ln -s ~/dev/dot-files/.tmux.conf ~/
 ln -s ~/dev/dot-files/.gitconfig ~/
 
 ln -s ~/dev/dot-files/.vimrc ~/
-ln -s ~/dev/dot-files/.slate ~/
 
 ln -s -F ~/dev/dot-files/private.xml ~/Library/Application\ Support/Karabiner/private.xml
 

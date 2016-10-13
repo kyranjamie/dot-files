@@ -1,17 +1,10 @@
-export PATH="/usr/local/bin:/Users/kyran/Dropbox/tech/scripts:$PATH"
-export PATH="$HOME/.bin:$PATH"
-export PATH="$HOME/.bin/arcanist/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
-export PATH="/opt/local/sbin:$PATH"
-export PATH
-
+export PATH="/usr/local/bin:$PATH"
+export PATH="/Users/kyran/Dropbox/tech/scripts:$PATH"
+export PATH="$HOME/Library/Python/2.7/lib/python/site-packages:$PATH"
 export EDITOR="vim"
-
+export VISUAL="vim"
 export GOPATH="$HOME/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
-export USABILLA_PROJECTS="projects/"
-export UBJS="projects/usabilla.js/usabilla.js"
-
 export ACK_OPTIONS="--ignore-case --literal"
 
 
@@ -63,23 +56,25 @@ done
 unset file
 
 bindkey -e
-bindkey "^[C" forward-word
-bindkey "^[D" backward-word
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
 
 # delete key broken ? wtf
 bindkey "^[[3~"  delete-char
 bindkey "^[3;5~" delete-char
 
-# autoload -Uz compinit && compinit
+# Required for completion
+autoload -Uz compinit && compinit
 
-# zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-# zstyle :completion::complete:git-checkout:argument-rest:headrefs command "git for-each-ref --format='%(refname)' refs/heads 2>/dev/null"
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle :completion::complete:git-checkout:argument-rest:headrefs command "git for-each-ref --format='%(refname)' refs/heads 2>/dev/null"
 zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)CVS'
 zstyle ':completion:*:cd:*' ignored-patterns '(*/)#CVS'
 zstyle '*' single-ignored complete
 
 zstyle ':completion:*' completer _complete
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+
 
 # Show tab complete menu immediately
 # zstyle ':completion:*' menu yes select
@@ -88,10 +83,9 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 # autoload -Uz vcs_info
 # zstyle ':vcs_info:*' enable git svn
 
-
-
-# init nvm
-source ~/.nvm/nvm.sh
+# init nvm 
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
 
 # init z 
 # https://github.com/rupa/z

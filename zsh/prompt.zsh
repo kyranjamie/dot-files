@@ -1,4 +1,13 @@
-
+#
+# Load and configure escaped colour globals
+autoload -U colors && colors
+reset="%{${reset_color}%}"
+white="%{$fg[white]%}"
+gray="%{$fg[black]%}"
+green="%{$fg[green]%}"
+red="%{$fg[red]%}"
+yellow="%{$fg[yellow]%}"
+magenta="%{$fg[magenta]%}"
 
 # Modify the colors and symbols in these variables as desired.
 GIT_PROMPT_SYMBOL="%{$fg[blue]%}±"

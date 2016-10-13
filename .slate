@@ -78,7 +78,7 @@ bind backslash:${hyper} relaunch
 bind a:${hyper} focus 'Google Chrome'
 bind e:${hyper} focus 'Sublime Text'
 bind r:${hyper} focus 'Robomongo'
-bind c:${hyper} focus 'Fantastical'
+bind c:${hyper} focus 'Calendar'
 bind s:${hyper} focus 'Skype'
 bind f:${hyper} focus 'Finder'
 bind h:${hyper} focus 'HipChat'
