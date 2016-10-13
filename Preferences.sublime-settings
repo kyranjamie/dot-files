@@ -23,10 +23,12 @@
 		"*.zip",
 		"*.min.js",
 		"*.map",
-		"*ext-all.js"
+		"*ext-all.js",
+		"dist/*",
+		".tmp/*"
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
 	[
@@ -43,8 +45,7 @@
 		".git",
 		".settings",
 		".google_apis",
-		".idea",
-		".tmp"
+		".idea"
 	],
 	"font_face": "Inconsolata-dz for Powerline",
 	"font_size": 12.0,
@@ -67,11 +68,15 @@
 	"material_theme_tabs_separator": true,
 	"node_path": "/Users/kyran/.nvm/versions/node/v5.10.1/bin/node",
 	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		140
+	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_encoding": true,
-	"theme": "Material-Theme-Darker.sublime-theme",
-	"typescript_plugin_tsc_version": "1.7.5",
+	"theme": "Material-Theme.sublime-theme",
+	"typescript_plugin_tsc_version": "1.8.10",
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": true
