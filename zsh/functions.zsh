@@ -50,11 +50,10 @@ function del () {
   done
 }
 
-# Google Translate API
-# https://github.com/soimort/google-translate-cli
+# Translate API
+# https://github.com/soimort/translate-shell
 fr () {
   X=`trans :fr "$1"`;
-#  echo "$X" | pbcopy;
   echo "$X";
 }
 
@@ -66,6 +65,11 @@ nl () {
 nlen () {
   X=`trans nl:en "$1"`;
   echo "$X";
+}
+
+nls () {
+  X=`trans en:nl -b -p -n Xander "$1"`
+  echo $X;
 }
 
 # Convert screen recordings to gif image

@@ -49,8 +49,8 @@ alias sz='source ~/.zshrc'
 # ----------------------------------------------------------------------
 
 # Vagrant
-alias vssh="cd ~/projects/infrastructure && vagrant ssh -- -x"
-alias vagup="cd ~/projects/infrastructure && vagrant up && cd -"
+alias vssh="cd ~/dev/chewbacca && vagrant ssh"
+alias vagup="cd ~/dev/chewbacca && vagrant up && cd -"
 
 # Docker
 alias dk="docker"
@@ -140,9 +140,3 @@ alias gd="git diff --color | diff-so-fancy"
 alias ghash="git rev-parse HEAD && git rev-parse HEAD | pbcopy"
 alias conflicts="git diff --name-only | uniq"
 alias commits="git shortlog -sn"
-
-
-
-
-
-
