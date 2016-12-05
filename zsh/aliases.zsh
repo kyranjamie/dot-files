@@ -36,6 +36,9 @@ alias imageotim='open -a "ImageOptim"'
 alias sketch='open -a "Sketch"'
 alias chromex='open -a "Google Chrome Canary" --args --disable-web-security'
 alias t='task'
+alias vi="nvim"
+alias vim="nvim"
+alias vimdiff="nvim -d"
 # Defaults
 alias grep='grep -i'
 alias less='less -N'
