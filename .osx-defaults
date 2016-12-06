@@ -9,6 +9,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 # Enable key repeat (requires logout)
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# Disable press and hold key accent menu
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Enable full keyboard access
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 

@@ -1,12 +1,15 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/Users/kyran/Dropbox/tech/scripts:$PATH"
+export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 export PATH="$HOME/Library/Python/2.7/lib/python/site-packages:$PATH"
+
 export EDITOR="vim"
 export VISUAL="vim"
 export TASKRC="$HOME/Dropbox/life/todo/.todorc"
 export GOPATH="$HOME/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
 export ACK_OPTIONS="--ignore-case --literal"
+export HOMEBREW_BREWFILE="$HOME/dev/dot-files/Brewfile"
 
 
 # Docker stuff

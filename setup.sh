@@ -1,5 +1,6 @@
 # Set up script
 
+ln -s ~/dev/dot-files/zsh/.hushlogin ~/
 ln -s ~/dev/dot-files/zsh/.aliases.zsh ~/
 ln -s ~/dev/dot-files/zsh/.zshrc ~/
 ln -s ~/dev/dot-files/zsh/.functions.zsh ~/
