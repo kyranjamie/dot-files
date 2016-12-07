@@ -1,5 +1,11 @@
 # OSX Setting defaults
 
+# Set Finder.app side bar size to small
+defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+
+# Increase window resize speed for Cocoa applications
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
 # Allow text selection from quick look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
@@ -34,3 +40,20 @@ defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
 # Open the dock faster
 defaults write com.apple.dock autohide-time-modifier -float 0.35; killall Dock;
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Disable smart quotes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Speed up Mission Control animations
+defaults write com.apple.dock expose-animation-duration -float 0.1
