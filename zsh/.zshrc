@@ -10,45 +10,29 @@ export GOPATH="$HOME/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
 export ACK_OPTIONS="--ignore-case --literal"
 export HOMEBREW_BREWFILE="$HOME/dev/dot-files/Brewfile"
+export NODE_VERSION="v7.2.0"
+export PATH="${PATH}:${NVM_DIR}/versions/node/${NODE_VERSION}/bin"
 
-
-# Docker stuff
-# export DEVIP=$(docker-machine ip default)
-# export DOCKERINFRA="$HOME/projects/infrastructure"
-# eval `docker-machine env default`
+# 
+# History
+# ------------------------------------------------------------
+HISTFILE=~/.history
+HISTSIZE=10000
+SAVEHIST=10000
+HISTCONTROL="ignoredups"
+HISTORY_IGNORE="(ls *|ll *|gs)"
 
 setopt prompt_subst
+setopt hist_ignore_all_dups
 setopt APPEND_HISTORY
-unsetopt share_history
+setopt histignorespace
 unsetopt INC_APPEND_HISTORY
+unsetopt share_history
 
 # so annoying
 setopt NO_BEEP
-
 # Case insensitive globbing
 setopt NO_CASE_GLOB
-
-#
-# Configure antigen
-# source ~/dev/dot-files/antigen/antigen.zsh
-
-# antigen use oh-my-zsh
-
-
-# antigen plugins
-# antigen bundle gitfast
-# antigen bundle aws
-# antigen bundle brew
-# antigen bundle compleat
-# antigen bundle docker
-# antigen bundle npm
-# antigen bundle node
-# antigen bundle gem
-# antigen bundle zsh-users/zsh-syntax-highlighting
-
-
-# enable antigen
-# antigen apply
 
 #
 # Source configs
@@ -77,10 +61,6 @@ autoload -Uz compinit && compinit
 # Otherwise first tab results in just presenting the options
 setopt menu_complete
 
-# Set shift-tab to go in reverse of autocomplete options 
-# bindkey -M menuselect '^[[Z' reverse-menu-complete
-
-# To annotate what this stuff does
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle :completion::complete:git-checkout:argument-rest:headrefs command "git for-each-ref --format='%(refname)' refs/heads 2>/dev/null"
 zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)CVS'
@@ -91,16 +71,19 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 
 
 # Show tab complete menu immediately
-# zstyle ':completion:*' menu yes select
-
-# autoload -Uz vcs_info
-# zstyle ':vcs_info:*' enable git svn
+zstyle ':completion:*' menu yes select
 
 # init nvm 
+# https://github.com/creationix/nvm/issues/860#issuecomment-242157535
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+. "/usr/local/opt/nvm/nvm.sh" --no-use
 
 # init z 
 # https://github.com/rupa/z
 # installed with brew
 . `brew --prefix`/etc/profile.d/z.sh
+
+# Enable auto-complete for ZSH
+# https://github.com/zsh-users/zsh-autosuggestions
+. ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
