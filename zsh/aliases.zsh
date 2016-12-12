@@ -19,6 +19,7 @@ alias ls="command ls ${colorflag}"
 alias la="ls -a ${colorflag}"
 alias ll="ls -lah ${colorflag}"
 alias lsd='ls -lF ${colorflag} | grep "^d"'
+alias k='k -h'
 alias cls="clear"
 alias tree1="tree -L 1"
 alias tree2="tree -L 2"

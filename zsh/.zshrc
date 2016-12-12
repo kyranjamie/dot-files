@@ -87,3 +87,7 @@ export NVM_DIR="$HOME/.nvm"
 # https://github.com/zsh-users/zsh-autosuggestions
 . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
+
+#
+# https://github.com/supercrabtree/k
+. ~/.nvm/k/k.sh
