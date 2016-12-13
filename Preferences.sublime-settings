@@ -52,7 +52,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"JsFormat"
 	],
 	"indent_guide_options":
 	[

@@ -1,17 +1,18 @@
-export PATH="/usr/local/bin:$PATH"
-export PATH="/Users/kyran/Dropbox/tech/scripts:$PATH"
-export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
-export PATH="$HOME/Library/Python/2.7/lib/python/site-packages:$PATH"
-
 export EDITOR="vim"
 export VISUAL="vim"
-export TASKRC="$HOME/Dropbox/life/todo/.todorc"
-export GOPATH="$HOME/.go"
+export TASKRC="${HOME}/Dropbox/life/todo/.todorc"
+export GOPATH="${HOME}/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
 export ACK_OPTIONS="--ignore-case --literal"
-export HOMEBREW_BREWFILE="$HOME/dev/dot-files/Brewfile"
+export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
+export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
 export NODE_VERSION="v7.2.0"
-export PATH="${PATH}:${NVM_DIR}/versions/node/${NODE_VERSION}/bin"
+
+export PATH="/usr/local/bin:${PATH}"
+export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"
+export PATH="${HOME}/.gem/ruby/2.0.0/bin:${PATH}"
+export PATH="${HOME}/Library/Python/2.7/lib/python/site-packages:${PATH}"
+export PATH="${NVM_DIR}/versions/node/${NODE_VERSION}/bin:${PATH}:"
 
 # 
 # History
@@ -75,7 +76,7 @@ zstyle ':completion:*' menu yes select
 
 # init nvm 
 # https://github.com/creationix/nvm/issues/860#issuecomment-242157535
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="${HOME}/.nvm"
 . "/usr/local/opt/nvm/nvm.sh" --no-use
 
 # init z 
