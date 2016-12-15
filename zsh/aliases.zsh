@@ -53,8 +53,8 @@ alias sz='source ~/.zshrc'
 # ----------------------------------------------------------------------
 
 # Vagrant
-alias vssh="cd ~/dev/chewbacca && vagrant ssh"
-alias vagup="cd ~/dev/chewbacca && vagrant up && cd -"
+alias vssh="cd ${PRIMARY_VAGRANT_PATH} && vagrant ssh"
+alias vagup="cd ${PRIMARY_VAGRANT_PATH} && vagrant up && cd -"
 
 # Docker
 alias dk="docker"

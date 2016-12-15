@@ -6,6 +6,7 @@ export IPLAYER_OUTDIR="Documents/iplayer/"
 export ACK_OPTIONS="--ignore-case --literal"
 export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
 export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
+export NVM_DIR="${HOME}/.nvm"
 export NODE_VERSION="v7.2.0"
 
 export PATH="/usr/local/bin:${PATH}"
@@ -76,7 +77,6 @@ zstyle ':completion:*' menu yes select
 
 # init nvm 
 # https://github.com/creationix/nvm/issues/860#issuecomment-242157535
-export NVM_DIR="${HOME}/.nvm"
 . "/usr/local/opt/nvm/nvm.sh" --no-use
 
 # init z 
