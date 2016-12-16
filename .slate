@@ -88,5 +88,5 @@ bind i:${hyper} focus 'Textual 5'
 bind v:${hyper} focus 'MacVim'
 bind w:${hyper} focus 'WhatsApp'
 bind m:${hyper} focus 'Spotify'
-bind t:${hyper} focus 'Telegram'
+bind g:${hyper} focus 'Telegram'
 
