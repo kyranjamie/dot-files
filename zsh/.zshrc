@@ -38,7 +38,7 @@ setopt NO_CASE_GLOB
 
 #
 # Source configs
-for file in ~/dev/dot-files/zsh/{aliases,functions,prompt}.zsh; do
+for file in ~/dev/dot-files/zsh/.{aliases,functions,prompt}.zsh; do
   [ -r "$file" ] && source "$file"
 done
 unset file

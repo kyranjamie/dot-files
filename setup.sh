@@ -18,4 +18,4 @@ ln -s ~/dev/dot-files/.vimrc ~/
 ln -sF ~/dev/dot-files/private.xml ~/Library/Application\ Support/Karabiner/private.xml
 
 ln -sF ~/dev/dot-files/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sF ~/dev/dot-files/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -sF ~/dev/dot-files/Dnefault\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
