@@ -80,15 +80,19 @@ check_unused_alias() {
   local command=$history[$[HISTCMD-1]]
   # Loop keys for matching command
   for c in ${(k)aliases[(R)$command]}; do 
-    echo "\nYou typed $fg[red]$command$reset_color but you could have typed $fg[green]$c"
+    echo "\nYou typed $fg[red]$command$reset_color but you could have typed $fg[green]$c$reset_color"
   done
 }
 
-# Execute every cmd
+# Execute before every cmd
 precmd() {
+
+  # Set directory name as tab title
+  echo -ne "\033]0;${PWD##*/}\007"
 
   check_unused_alias
 
+  # Calculation to pad git status message over to the right of the prompt
   PROMPT_NAME="$red%{%B%}%n%{%b%}$reset"
   PROMPT_DIR="$yellow%{%B%}${PWD/#$HOME/~}%{%b%}$reset"
   local i_left
