@@ -1,5 +1,5 @@
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export TASKRC="${HOME}/Dropbox/life/todo/.todorc"
 export GOPATH="${HOME}/.go"
 export IPLAYER_OUTDIR="Documents/iplayer/"
