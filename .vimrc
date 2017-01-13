@@ -130,7 +130,8 @@ filetype plugin indent on
 " Detect markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
 
-
+" vim-json option to not hide quotes
+let g:vim_json_syntax_conceal = 0
 
 
 "
@@ -195,5 +196,4 @@ let g:airline_powerline_fonts = 1
 
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#A4E57E'
-
 
