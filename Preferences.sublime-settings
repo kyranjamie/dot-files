@@ -45,10 +45,12 @@
 		".git",
 		".settings",
 		".google_apis",
-		".idea"
+		".idea",
+		".bundle",
+		".bin"
 	],
-	"font_face": "Inconsolata-dz for Powerline",
-	"font_size": 12.0,
+	"font_face": "FiraMono-Regular",
+	"font_size": 14.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -65,7 +67,7 @@
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
-	"node_path": "/Users/kyran/.nvm/versions/node/v7.2.0/bin/node",
+	"node_path": "/Users/kyran/.nvm/versions/node/v6.1.0/bin/node",
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[

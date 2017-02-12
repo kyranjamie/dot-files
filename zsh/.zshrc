@@ -7,7 +7,7 @@ export ACK_OPTIONS="--ignore-case --literal"
 export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
 export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
 export NVM_DIR="${HOME}/.nvm"
-export NODE_VERSION="v7.2.0"
+export NODE_VERSION="v6.1.0"
 
 export PATH="/usr/local/bin:${PATH}"
 export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"
@@ -77,7 +77,7 @@ zstyle ':completion:*' menu yes select
 
 # init nvm 
 # https://github.com/creationix/nvm/issues/860#issuecomment-242157535
-. "/usr/local/opt/nvm/nvm.sh" --no-use
+. "$NVM_DIR/nvm.sh" --no-use
 
 # init z 
 # https://github.com/rupa/z
