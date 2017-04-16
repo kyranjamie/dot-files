@@ -112,3 +112,15 @@ chkinvalidation() {
     echo "Run $ pip install awscli"
   fi
 }
+
+# Use ranger to switch directory
+cdr() {
+  tempfile=$(mktemp)
+  ranger --choosedir="$tempfile" "${@:-$(pwd)}" < $TTY
+  test -f "$tempfile" &&
+  if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+    cd -- "$(cat "$tempfile")"
+  fi
+  rm -f -- "$tempfile"
+}
+

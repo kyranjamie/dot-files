@@ -7,7 +7,7 @@ export ACK_OPTIONS="--ignore-case --literal"
 export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
 export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
 export NVM_DIR="${HOME}/.nvm"
-export NODE_VERSION="v6.1.0"
+export NODE_VERSION="v6.10.0"
 
 export PATH="/usr/local/bin:${PATH}"
 export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"

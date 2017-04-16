@@ -7,6 +7,8 @@ Plug 'tpope/vim-sensible'
 Plug 'scrooloose/syntastic'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'leafgarland/typescript-vim'
 Plug 'fatih/vim-go'
 Plug 'kchmck/vim-coffee-script'
@@ -74,6 +76,9 @@ set history=1000
 
 " Hide NERDTree scrollbar
 set guioptions-=L
+
+" Search recursively in subdirs
+set path+=**
 
 " Hide MacVim gui elements
 set guioptions-=T
