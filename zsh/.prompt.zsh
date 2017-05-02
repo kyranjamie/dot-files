@@ -3,23 +3,24 @@
 autoload -U colors && colors
 reset="%{${reset_color}%}"
 white="%{$fg[white]%}"
-gray="%{$fg[black]%}"
+grey="%{$fg[black]%}"
 green="%{$fg[green]%}"
 red="%{$fg[red]%}"
+blue="%{$fg[blue]%}"
 yellow="%{$fg[yellow]%}"
 magenta="%{$fg[magenta]%}"
 
 # Modify the colors and symbols in these variables as desired.
 GIT_PROMPT_SYMBOL="%{$fg[blue]%}±"
-GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$reset_color%}"
-GIT_PROMPT_SUFFIX="%{$fg[green]%}]%{$reset_color%}"
-GIT_PROMPT_AHEAD="%{$fg[red]%}ANUM%{$reset_color%}"
-GIT_PROMPT_BEHIND="%{$fg[cyan]%}BNUM%{$reset_color%}"
-GIT_PROMPT_STASHED="%{$fg[magenta]%}SNUM%{$reset_color%}"
-GIT_PROMPT_MERGING="%{$fg[magenta]%}⚡︎%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="%{$fg[red]%}●%{$reset_color%}"
-GIT_PROMPT_MODIFIED="%{$fg[yellow]%}●%{$reset_color%}"
-GIT_PROMPT_STAGED="%{$fg[green]%}●%{$reset_color%}"
+GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$reset%}"
+GIT_PROMPT_SUFFIX="%{$fg[green]%}]%{$reset%}"
+GIT_PROMPT_AHEAD="%{$fg[red]%}ANUM%{$reset%}"
+GIT_PROMPT_BEHIND="%{$fg[cyan]%}BNUM%{$reset%}"
+GIT_PROMPT_STASHED="%{$fg[magenta]%}NUM%{$reset%}"
+GIT_PROMPT_MERGING="%{$fg[magenta]%}⚡︎%{$reset%}"
+GIT_PROMPT_UNTRACKED="%{$fg[red]%}●%{$reset%}"
+GIT_PROMPT_MODIFIED="%{$fg[yellow]%}●%{$reset%}"
+GIT_PROMPT_STAGED="%{$fg[green]%}●%{$reset%}"
 
 # Show Git branch/tag, or name-rev if on detached head
 parse_git_branch() {
@@ -80,7 +81,7 @@ check_unused_alias() {
   local command=$history[$[HISTCMD-1]]
   # Loop keys for matching command
   for c in ${(k)aliases[(R)$command]}; do 
-    echo "\nYou typed $fg[red]$command$reset_color but you could have typed $fg[green]$c$reset_color"
+    echo "\nYou typed $fg[red]$command$reset but you could have typed $fg[green]$c$reset"
   done
 }
 
@@ -93,7 +94,7 @@ precmd() {
   check_unused_alias
 
   # Calculation to pad git status message over to the right of the prompt
-  PROMPT_NAME="$red%{%B%}%n%{%b%}$reset"
+  PROMPT_NAME="$blue%n$reset"
   PROMPT_DIR="$yellow%{%B%}${PWD/#$HOME/~}%{%b%}$reset"
   local i_left
   local i_right
@@ -111,8 +112,8 @@ precmd() {
   i_right=${#${(%)i_right}}
   # buffer width - prompt text
   padding=$(( $COLUMNS - $i_left - $i_right ))
-  filler="${gray}${(l:${padding}:::)}${reset}"
+  filler="${grey}${(l:${padding}:::)}${reset}"
   print -P $left${filler}$right
 }
 
-PS1="❯ "
+PS1="$grey❯ $reset"

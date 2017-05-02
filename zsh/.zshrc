@@ -92,3 +92,5 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
 #
 # https://github.com/supercrabtree/k
 . ~/.nvm/k/k.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

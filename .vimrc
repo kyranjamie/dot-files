@@ -3,7 +3,6 @@
 " __________________________________________________________________________
  
 call plug#begin()
-Plug 'tpope/vim-sensible'
 Plug 'scrooloose/syntastic'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'
@@ -196,9 +195,4 @@ syntax enable
 set t_Co=256
 " colorscheme solarized
 
-let g:gitgutter_realtime = 1
-let g:airline_powerline_fonts = 1
-
-let g:indentLine_color_term = 239
-let g:indentLine_color_gui = '#A4E57E'
 
