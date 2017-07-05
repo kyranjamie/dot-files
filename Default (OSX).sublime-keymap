@@ -2,6 +2,7 @@
   { "keys": ["super+v"], "command": "paste_and_indent" }, 
   { "keys": ["super+shift+v"], "command": "paste" },
   { "keys": ["f12"], "command": "next_bookmark" },
+  { "keys": ["alt+r"], "command": "reveal_in_side_bar" },
   { "keys": ["shift+f12"], "command": "prev_bookmark" },
   { "keys": ["super+f12"], "command": "toggle_bookmark" },
   { "keys": ["super+shift+f12"], "command": "clear_bookmarks" },
