@@ -1,7 +1,7 @@
 #
 # Load and configure escaped colour globals
 autoload -U colors && colors
-reset="%{${reset_color}%}"
+reset="${reset_color}"
 white="%{$fg[white]%}"
 grey="%{$fg[black]%}"
 green="%{$fg[green]%}"
