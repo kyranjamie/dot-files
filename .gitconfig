@@ -1,6 +1,7 @@
 [user]
     name = Kyran Burraston
 	email = kyran.burraston@gmail.com
+	signingkey = 61CEF59206295323
 
 [push]
     default = simple
@@ -26,6 +27,7 @@
 
 [alias]
     cf = !sh -c \"git diff --name-only | uniq | xargs s\"\n
+	checkoutr = checkout
 
 [core]
     pager = less -R
@@ -42,3 +44,7 @@
     clean = git lfs clean %f
     smudge = git lfs smudge %f
     required = true
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true

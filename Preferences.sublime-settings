@@ -36,11 +36,11 @@
 		"*.sublime-workspace",
 		"*.command",
 		".DS_Store",
-		"coverage/html/*"
+		"coverage/html/*",
+		"node_modules/*"
 	],
 	"folder_exclude_patterns":
 	[
-		"node_modules",
 		".sass-cache",
 		"eclipse-launch-profiles",
 		".git",
@@ -48,10 +48,13 @@
 		".google_apis",
 		".idea",
 		".bundle",
-		".bin"
+		".bin",
+		".awcache",
+		".vscode"
 	],
 	"font_face": "FiraMono-Regular",
-	"font_size": 14.0,
+	"font_size": 12,
+	"hide_minimap": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -68,17 +71,17 @@
 	"material_theme_small_tab": true,
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
-	"node_path": "/Users/kyran/.nvm/versions/node/v6.1.0/bin/node",
+	"material_theme_titlebar": true,
+	"node_path": "/Users/kyran/.nvm/versions/node/v7.2.1/bin/node",
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
-		140
+		100
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_encoding": true,
 	"theme": "Material-Theme.sublime-theme",
-	"typescript_plugin_tsc_version": "1.8.10",
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": true

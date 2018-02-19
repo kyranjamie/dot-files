@@ -1,7 +1,7 @@
 #
 # Load and configure escaped colour globals
 autoload -U colors && colors
-reset="${reset_color}"
+reset="%{${reset_color}%}"
 white="%{$fg[white]%}"
 grey="%{$fg[black]%}"
 green="%{$fg[green]%}"
@@ -76,12 +76,18 @@ git_prompt_string() {
   [ -n "$git_where" ] && print "$GIT_PROMPT_SYMBOL$(parse_git_state)$GIT_PROMPT_PREFIX%{$fg[yellow]%}%{%B%}${git_where#(refs/heads/|tags/)}%{%b%}$GIT_PROMPT_SUFFIX"
 }
 
+docker_machine_name() {
+  if [[ $DOCKER_MACHINE_NAME ]]; then
+    echo "[$DOCKER_MACHINE_NAME]"
+  fi
+}
+
 check_unused_alias() {
   # Previous cmd
   local command=$history[$[HISTCMD-1]]
   # Loop keys for matching command
   for c in ${(k)aliases[(R)$command]}; do 
-    echo "\nYou typed $fg[red]$command$reset but you could have typed $fg[green]$c$reset"
+    echo "\nYou typed $fg[red]$command${reset_color} but you could have typed $fg[green]$c${reset_color}"
   done
 }
 
@@ -103,7 +109,7 @@ precmd() {
   local padding
   local filler
   left="${PROMPT_NAME} ${grey}in${reset} ${PROMPT_DIR}"
-  right="$(git_prompt_string)"
+  right="$(git_prompt_string)$(docker_machine_name)"
   # string with no escapes
   i_left=${(S)left//\%\{*\%\}}
   i_right=${(S)right//\%\{*\%\}}

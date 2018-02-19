@@ -6,14 +6,20 @@ export IPLAYER_OUTDIR="Documents/iplayer/"
 export ACK_OPTIONS="--ignore-case --literal"
 export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
 export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
+export TRANSLATION_LAYER_ENV="mock"
 export NVM_DIR="${HOME}/.nvm"
-export NODE_VERSION="v6.10.0"
+export NODE_VERSION="v8.6.0"
+export DOCKER_ID_USER="kyranjamie"
+export HOMEBREW_GITHUB_API_TOKEN="a15c0185aaaa7d095cf40a3655d62c726bdb859b"
+export CONTROL_PANEL_API_URL="http://demo.pm-api.com"
 
 export PATH="/usr/local/bin:${PATH}"
 export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"
 export PATH="${HOME}/.gem/ruby/2.0.0/bin:${PATH}"
 export PATH="${HOME}/Library/Python/2.7/lib/python/site-packages:${PATH}"
 export PATH="${NVM_DIR}/versions/node/${NODE_VERSION}/bin:${PATH}:"
+export PATH="${HOME}/.yarn/bin:${PATH}:"
+export PATH="${HOME}/.config/yarn/global/node_modules/.bin:${PATH}:"
 
 # 
 # History
@@ -94,3 +100,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
 . ~/.nvm/k/k.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh

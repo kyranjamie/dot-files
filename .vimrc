@@ -16,9 +16,9 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
+Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'statianzo/vim-jade'
 Plug 'NLKNguyen/papercolor-theme'
@@ -28,9 +28,10 @@ Plug 'mhinz/vim-startify'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'chase/vim-ansible-yaml'
 Plug 'mileszs/ack.vim'
-" Plug 'qualiabyte/vim-colorstepper'
 Plug 'Yggdroot/indentLine'
 Plug 'altercation/vim-colors-solarized'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
@@ -174,7 +175,14 @@ let g:netrw_liststyle=3
 
 " Disable markdown code folding
 " https://github.com/plasticboy/vim-markdown
-let g:vim_markdown_folding_disabled=1
+" let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding_level = 2
+
+
+"
+" Goyo settings
+" __________________________________________________________________________
+let g:goyo_height=100
 
 
 "
