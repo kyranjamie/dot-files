@@ -200,12 +200,6 @@ cask firefoxdeveloperedition
 cask github-desktop
 
 # App Store applications
-appstore 1141688067 Coin Tick (2.17)
-appstore 0 Install macOS High Sierra (13.1.05)
-appstore 409183694 Keynote (7.3.1)
-appstore 409203825 Numbers (4.3.1)
-appstore 928941247 OTP Manager (1.5.0)
-appstore 409201541 Pages (6.3.1)
 appstore 507257563 Sip (4.5.2)
 appstore 1278508951 Trello (2.10.0)
 appstore 409789998 Twitter (4.3.2)

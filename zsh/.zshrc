@@ -20,6 +20,7 @@ export PATH="${HOME}/Library/Python/2.7/lib/python/site-packages:${PATH}"
 export PATH="${NVM_DIR}/versions/node/${NODE_VERSION}/bin:${PATH}:"
 export PATH="${HOME}/.yarn/bin:${PATH}:"
 export PATH="${HOME}/.config/yarn/global/node_modules/.bin:${PATH}:"
+export PATH="$HOME/.cargo/bin:${PATH}:"
 
 # 
 # History
