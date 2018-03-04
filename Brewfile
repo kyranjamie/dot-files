@@ -8,7 +8,6 @@ brew ansible
 brew argtable
 brew autoconf
 brew automake
-brew boost
 brew cairo
 brew cloc
 brew cmake
@@ -17,7 +16,6 @@ brew cowsay
 brew cryptopp
 brew diff-so-fancy
 brew dos2unix
-brew elasticsearch
 brew ffmpeg
 brew fontconfig
 brew fpp
@@ -45,7 +43,6 @@ brew htop
 brew httpie
 brew hub
 brew hugo
-brew icu4c
 brew imagemagick
 brew iso-codes
 brew jasper
@@ -110,7 +107,6 @@ brew rlwrap
 brew ruby
 brew sassc
 brew snappy
-brew speedtest-cli
 brew sqlite
 brew svg2png
 brew terminal-notifier
@@ -162,25 +158,18 @@ cask keybase
 cask macpass
 cask mpv
 cask osxfuse
-cask postman
 cask redis-app
 cask rowanj-gitx
 cask sequel-pro
 cask skype
 cask slack
-cask soda-player
 cask spotify
-cask steam
-cask studio-3t
 cask sublime-text
 cask superduper
-cask table-tool
 cask telegram
-cask unetbootin
 cask vagrant
 cask veracrypt
 cask virtualbox
-cask visual-studio-code
 cask vlc
 cask whatsapp
 

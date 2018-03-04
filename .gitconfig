@@ -1,7 +1,6 @@
 [user]
     name = Kyran Burraston
-	email = kyran.burraston@gmail.com
-	signingkey = 61CEF59206295323
+    email = kyran.burraston@gmail.com
 
 [push]
     default = simple
@@ -47,4 +46,3 @@
 [gpg]
 	program = gpg
 [commit]
-	gpgsign = true

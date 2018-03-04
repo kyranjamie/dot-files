@@ -1,23 +1,21 @@
-# Set up script
-
-ln -s ~/dev/dot-files/zsh/.hushlogin ~/
-ln -s ~/dev/dot-files/zsh/.aliases.zsh ~/
-ln -s ~/dev/dot-files/zsh/.zshrc ~/
-ln -s ~/dev/dot-files/zsh/.functions.zsh ~/
-ln -s ~/dev/dot-files/zsh/.prompt.zsh ~/
+ln -s $HOME/dev/dot-files/zsh/.hushlogin $HOME
+ln -s $HOME/dev/dot-files/zsh/.aliases.zsh $HOME
+ln -s $HOME/dev/dot-files/zsh/.zshrc $HOME
+ln -s $HOME/dev/dot-files/zsh/.functions.zsh $HOME
+ln -s $HOME/dev/dot-files/zsh/.prompt.zsh $HOME
 
 
-ln -s ~/dev/dot-files/.inputrc ~/
-ln -s ~/dev/dot-files/.slate ~/
-ln -s ~/dev/dot-files/.tmux.conf ~/
+ln -s $HOME/dev/dot-files/.inputrc $HOME
+ln -s $HOME/dev/dot-files/.slate $HOME
+ln -s $HOME/dev/dot-files/.tmux.conf $HOME
 
-ln -s ~/dev/dot-files/.gitconfig ~/
+ln -s $HOME/dev/dot-files/.gitconfig $HOME
 
-ln -s ~/dev/dot-files/.vimrc ~/
+ln -s $HOME/dev/dot-files/.vimrc $HOME
 
-ln -sF ~/dev/dot-files/private.xml ~/Library/Application\ Support/Karabiner/private.xml
+ln -sF $HOME/dev/dot-files/private.xml $HOME/Library/Application\ Support/Karabiner/private.xml
 
-ln -sF ~/dev/dot-files/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sF ~/dev/dot-files/Dnefault\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -sF $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -sF $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
-ln -sF ~/dev/dot-files/karabiner.json ~/.config/karabiner/
+ln -sF $HOME/dev/dot-files/karabiner.json $HOME/.config/karabiner/
