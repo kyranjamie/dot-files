@@ -21,7 +21,7 @@ export PATH="${HOME}/Library/Python/2.7/lib/python/site-packages:${PATH}"
 export PATH="${NVM_DIR}/versions/node/${NODE_VERSION}/bin:${PATH}:"
 export PATH="${HOME}/.yarn/bin:${PATH}:"
 export PATH="${HOME}/.config/yarn/global/node_modules/.bin:${PATH}:"
-export PATH="$HOME/.cargo/bin:${PATH}:"
+export PATH="${HOME}/.cargo/bin:${PATH}:"
 
 # 
 # History
@@ -39,7 +39,7 @@ setopt histignorespace
 unsetopt INC_APPEND_HISTORY
 unsetopt share_history
 
-# so annoying
+# So annoying
 setopt NO_BEEP
 # Case insensitive globbing
 setopt NO_CASE_GLOB
@@ -87,6 +87,8 @@ zstyle ':completion:*' menu yes select
 # https://github.com/creationix/nvm/issues/860#issuecomment-242157535
 . "$NVM_DIR/nvm.sh" --no-use
 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # init z 
 # https://github.com/rupa/z
 # installed with brew
@@ -97,10 +99,6 @@ zstyle ':completion:*' menu yes select
 . ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
 
-#
-# https://github.com/supercrabtree/k
-. ~/.nvm/k/k.sh
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # tabtab source for serverless package
@@ -109,3 +107,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+
