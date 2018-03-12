@@ -52,7 +52,7 @@
 		".awcache",
 		".vscode"
 	],
-	"font_face": "FiraMono-Regular",
+	"font_face": "Fira Code",
 	"font_size": 12,
 	"hide_minimap": true,
 	"highlight_line": true,
@@ -72,7 +72,7 @@
 	"material_theme_tabs_autowidth": true,
 	"material_theme_tabs_separator": true,
 	"material_theme_titlebar": true,
-	"node_path": "/Users/kyran/.nvm/versions/node/v7.2.1/bin/node",
+	"node_path": "/Users/kyran/.nvm/versions/node/v8.9.4/bin/node",
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
