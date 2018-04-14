@@ -13,8 +13,13 @@ ln -s $HOME/dev/dot-files/.gitconfig $HOME
 
 ln -s $HOME/dev/dot-files/.vimrc $HOME
 
+# Sublime Text
 ln -sF $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -sF $HOME/dev/dot-files/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -sF $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
+# Karabiner-Elements
 ln -sF $HOME/dev/dot-files/karabiner $HOME/.config
+
+# Hammerspoon
+ln -sF $HOME/dev/dot-files/.hammerspoon $HOME
