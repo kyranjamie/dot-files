@@ -20,8 +20,16 @@
 	<true/>
 	<key>HideTab</key>
 	<false/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>27</integer>
+	<key>HotkeyCode</key>
+	<integer>53</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>1048840</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -60,9 +68,9 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>643 414 796 473 0 0 1680 1028 </string>
+	<string>643 436 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>15 0 1424 1027 0 0 1680 1050 </string>
+	<string>0 0 1680 1050 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>427 334 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -766,7 +774,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-10T19:41:22Z</date>
+	<date>2018-04-11T11:07:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowPaneTitles</key>
@@ -779,6 +787,8 @@
 	<integer>1</integer>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>

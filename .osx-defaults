@@ -21,10 +21,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Enable full keyboard access
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Remove Notification Center
-# Requires `killall NotificationCenter` and log out
-sudo defaults write /System/Library/LaunchAgents/com.apple.notificationcenterui KeepAlive -bool false
-
 # Remove window shadow from screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
 
