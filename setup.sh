@@ -8,7 +8,7 @@ ln -s $HOME/dev/dot-files/zsh/.prompt.zsh $HOME
 ln -s $HOME/dev/dot-files/.inputrc $HOME
 ln -s $HOME/dev/dot-files/.slate $HOME
 ln -s $HOME/dev/dot-files/.tmux.conf $HOME
-
+ln -s $HOME/dev/dot-files/.ackrc $HOME
 ln -s $HOME/dev/dot-files/.gitconfig $HOME
 
 ln -s $HOME/dev/dot-files/.vimrc $HOME

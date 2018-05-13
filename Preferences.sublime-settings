@@ -28,7 +28,7 @@
 		".tmp/*"
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
 	"enable_tab_scrolling": false,
 	"file_exclude_patterns":
 	[
