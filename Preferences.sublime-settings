@@ -36,7 +36,7 @@
 		"*.sublime-workspace",
 		"*.command",
 		".DS_Store",
-		"coverage/html/*",
+		"coverage/*",
 		"node_modules/*"
 	],
 	"folder_exclude_patterns":
