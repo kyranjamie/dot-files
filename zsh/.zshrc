@@ -46,7 +46,7 @@ setopt NO_CASE_GLOB
 
 #
 # Source configs
-for file in ~/dev/dot-files/zsh/.{aliases,functions,prompt}.zsh; do
+for file in ~/dev/dot-files/zsh/.{aliases,functions,prompt,keys}.zsh; do
   [ -r "$file" ] && source "$file"
 done
 unset file
@@ -107,4 +107,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kyran/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/kyran/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 

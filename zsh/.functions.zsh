@@ -10,6 +10,10 @@ cdf() {
     fi
 }
 
+uuid() {
+  python -c 'import sys,uuid; sys.stdout.write(uuid.uuid4().hex)' | pbcopy && pbpaste && echo
+}
+
 # httpDebug:  Download a web page and show info on what took time
 httpdebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
 
