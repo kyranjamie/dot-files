@@ -16,7 +16,16 @@ hs.hotkey.bind(hyper, "R", function()
   hs.notify.new({title="Hammerspoon config reloaded", informativeText="Manually via keyboard shortcut"}):send()
 end)
 
-hs.hotkey.bind(hyper, 'A', function () hs.application.launchOrFocus("Google Chrome") end)
+hs.hotkey.bind(hyper, 'A', function ()
+  local activeApp = hs.application.frontmostApplication():title()
+
+  if activeApp == 'Google Chrome' then
+    hs.application.launchOrFocus("Firefox")
+  else 
+    hs.application.launchOrFocus("Google Chrome")
+  end
+end)
+
 hs.hotkey.bind(hyper, 'M', function () hs.application.launchOrFocus("Spotify") end)
 hs.hotkey.bind(hyper, 'E', function () hs.application.launchOrFocus("Sublime Text") end)
 hs.hotkey.bind(hyper, 'G', function () hs.application.launchOrFocus("Telegram") end)
