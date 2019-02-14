@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-]]></content>
-	<tabTrigger>rxbs</tabTrigger>
-</snippet>

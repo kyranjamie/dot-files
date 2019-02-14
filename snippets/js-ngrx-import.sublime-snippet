@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-import { combineLatest } from 'rxjs/observable/combineLatest';
+import { ${2} } from '@ngrx/${1}';
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>rxcombine</tabTrigger>
+	<tabTrigger>ngrxim</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
