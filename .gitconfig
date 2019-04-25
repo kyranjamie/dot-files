@@ -1,6 +1,11 @@
 [user]
     name = Kyran Burraston
     email = kyran.burraston@gmail.com
+[branch]
+    autosetuprebase = always
+
+[pull]
+    rebase = true
 
 [push]
     default = simple

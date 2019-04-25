@@ -8,11 +8,11 @@ export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
 export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
 export TRANSLATION_LAYER_ENV="mock"
 export NVM_DIR="${HOME}/.nvm"
-export NODE_VERSION="v8.9.4"
+export NODE_VERSION="v8.12.0"
 export DOCKER_ID_USER="kyranjamie"
 export HOMEBREW_BREWFILE="~/dev/dot-files/Brewfile"
 export HOMEBREW_CASK_OPTS="--appdir=$HOME/cask-apps"
-export CONTROL_PANEL_API_URL="http://demo.pm-api.com"
+export BP_DASHBOARD_PROJECT="$HOME/dev/blockport/frontend"
 
 export PATH="/usr/local/bin:${PATH}"
 export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"
@@ -22,6 +22,8 @@ export PATH="${NVM_DIR}/versions/node/${NODE_VERSION}/bin:${PATH}:"
 export PATH="${HOME}/.yarn/bin:${PATH}:"
 export PATH="${HOME}/.config/yarn/global/node_modules/.bin:${PATH}:"
 export PATH="${HOME}/.cargo/bin:${PATH}:"
+export PATH="${HOME}/Library/Python/2.7/bin:${PATH}:"
+export PATH=$(brew --prefix openvpn)/sbin:$PATH
 
 # 
 # History
@@ -109,9 +111,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 [[ -f /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
 
 
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/kyran/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/kyran/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
+if [ -f '/Users/kyran/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kyran/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

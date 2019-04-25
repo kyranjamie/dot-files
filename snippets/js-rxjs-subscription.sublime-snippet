@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[
-import { Subscription } from 'rxjs/Subscription';
-]]></content>
-	<tabTrigger>rxsub</tabTrigger>
-</snippet>

@@ -65,8 +65,8 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
 	"material_theme_compact_sidebar": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
@@ -83,6 +83,7 @@
 	"scroll_past_end": true,
 	"show_encoding": true,
 	"theme": "Material-Theme-Palenight.sublime-theme",
+	"typescript_tsdk": "/Users/kyran/.config/yarn/global/node_modules/typescript/lib",
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": true
