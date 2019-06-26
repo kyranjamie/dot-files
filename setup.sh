@@ -1,3 +1,6 @@
+# Ensure conig dir exists
+mkdir $HOME/.config
+
 ln -s $HOME/dev/dot-files/zsh/.hushlogin $HOME
 ln -s $HOME/dev/dot-files/zsh/.aliases.zsh $HOME
 ln -s $HOME/dev/dot-files/zsh/.zshrc $HOME
@@ -16,12 +19,12 @@ ln -s $HOME/dev/dot-files/.vimrc $HOME
 ln -s $HOME/dev/dot-files/rc.conf $HOME/.config/ranger
 
 # Sublime Text
-ln -sF $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sF $HOME/dev/dot-files/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -sF $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -s $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -s $HOME/dev/dot-files/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -s $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 # Karabiner-Elements
-ln -sF $HOME/dev/dot-files/karabiner $HOME/.config
+ln -s $HOME/dev/dot-files/karabiner $HOME/.config
 
 # Hammerspoon
-ln -sF $HOME/dev/dot-files/.hammerspoon $HOME
+ln -s $HOME/dev/dot-files/.hammerspoon $HOME

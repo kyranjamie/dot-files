@@ -1,17 +1,11 @@
-dot file defaults
+@kyranjamie dot files
 ================================
 
-Create symbolic link to relevent directory
+Create symbolic links to relevent directory:
 ```bash
-$ ln -s repo-dir/.inputrc ~/.inputrc
+./setup.sh
 ```
 
-```bash
-brew install rcmdnk/file/brew-file
-```
-
-To remember:
-- VimPlug
-- zsh-autosuggestions
-- z
+# Install manually
+- [VimPlug](https://github.com/junegunn/vim-plug)
 

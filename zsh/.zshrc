@@ -8,7 +8,7 @@ export HOMEBREW_BREWFILE="${HOME}/dev/dot-files/Brewfile"
 export PRIMARY_VAGRANT_PATH="${HOME}/dev/gr/chewbacca"
 export TRANSLATION_LAYER_ENV="mock"
 export NVM_DIR="${HOME}/.nvm"
-export NODE_VERSION="v8.12.0"
+export NODE_VERSION="v12.4.0"
 export DOCKER_ID_USER="kyranjamie"
 export HOMEBREW_BREWFILE="~/dev/dot-files/Brewfile"
 export HOMEBREW_CASK_OPTS="--appdir=$HOME/cask-apps"
@@ -98,7 +98,7 @@ zstyle ':completion:*' menu yes select
 
 # Enable auto-complete for ZSH
 # https://github.com/zsh-users/zsh-autosuggestions
-. ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=0"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
