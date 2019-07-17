@@ -6,6 +6,11 @@ Create symbolic links to relevent directory:
 ./setup.sh
 ```
 
+Install [Homebrew](https://brew.sh/) deps:
+```bash
+brew bundle
+```
+
 # Install manually
 - [VimPlug](https://github.com/junegunn/vim-plug)
 
