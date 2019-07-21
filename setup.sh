@@ -16,7 +16,7 @@ ln -s $HOME/dev/dot-files/.gitconfig $HOME
 
 ln -s $HOME/dev/dot-files/.vimrc $HOME
 
-ln -s $HOME/dev/dot-files/rc.conf $HOME/.config/ranger
+ln -s $HOME/dev/dot-files/ranger $HOME/.config/ranger
 
 # Sublime Text
 ln -s $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
