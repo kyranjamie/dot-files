@@ -50,10 +50,11 @@
 		".bundle",
 		".bin",
 		".awcache",
-		".vscode"
+		".vscode",
+		".next"
 	],
 	"font_face": "Fira Code",
-	"font_size": 11,
+	"font_size": 13,
 	"hide_minimap": true,
 	"highlight_line": true,
 	"ignored_packages":
