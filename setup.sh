@@ -22,3 +22,7 @@ ln -s $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application
 ln -s $HOME/dev/dot-files/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ln -s $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
+# VSCode
+ln -s $HOME/dev/dot-files/VSCode/settings.json $HOME/Library/Application\ Support/Code/User/
+ln -s $HOME/dev/dot-files/VSCode/keybindings.json $HOME/Library/Application\ Support/Code/User
+ln -s $HOME/dev/dot-files/VSCode/snippets $HOME/Library/Application\ Support/Code/User
