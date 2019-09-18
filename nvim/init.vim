@@ -2,7 +2,7 @@
 " Define plugins 
 " __________________________________________________________________________
  
-call plug#begin()
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/syntastic'
 Plug 'elzr/vim-json'
 Plug 'pangloss/vim-javascript'

@@ -31,8 +31,6 @@ alias tree3="tree -L 3"
 # ----------------------------------------------------------------------
 
 alias s='open -a "Sublime Text"'
-alias photoshop='open -a "Adobe Photoshop CC 2015"'
-alias illustrator='open -a "Adobe Illustrator CS6"'
 alias imageotim='open -a "ImageOptim"'
 alias sketch='open -a "Sketch"'
 alias chromex='open -a "Google Chrome Canary" --args --disable-web-security'

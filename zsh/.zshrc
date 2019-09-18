@@ -17,12 +17,15 @@ export PATH="/usr/local/bin:${PATH}"
 export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"
 export PATH="${HOME}/.gem/ruby/2.0.0/bin:${PATH}"
 export PATH="${HOME}/Library/Python/2.7/lib/python/site-packages:${PATH}"
-export PATH="${NVM_DIR}/versions/node/${NODE_VERSION}/bin:${PATH}:"
 export PATH="${HOME}/.yarn/bin:${PATH}:"
 export PATH="${HOME}/.config/yarn/global/node_modules/.bin:${PATH}:"
 export PATH="${HOME}/.cargo/bin:${PATH}:"
 export PATH="${HOME}/Library/Python/2.7/bin:${PATH}:"
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 
 # 
 # History
@@ -84,12 +87,6 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 # Show tab complete menu immediately
 zstyle ':completion:*' menu yes select
 
-# init nvm 
-# https://github.com/creationix/nvm/issues/860#issuecomment-242157535
-. "$NVM_DIR/nvm.sh" --no-use
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # init z 
 # https://github.com/rupa/z
 # installed with brew
@@ -108,8 +105,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/kyran/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
-
-
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kyran/Downloads/google-cloud-sdk/path.zsh.inc'; fi
