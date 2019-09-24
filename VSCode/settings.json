@@ -7,5 +7,13 @@
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "window.zoomLevel": -1,
+    "editor.tabSize": 2,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.tree.indent": 18
 }
