@@ -36,7 +36,7 @@
 [core]
     pager = less -R
     excludesfile = ~/.gitignore
-    editor = vim
+    editor = nvim
 
 [github]
     user = kyranjamie
