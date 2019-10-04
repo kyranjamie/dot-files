@@ -24,7 +24,6 @@ hs.hotkey.bind(hyper, 'F', function () hs.application.launchOrFocus("Finder") en
 hs.hotkey.bind(hyper, 'W', function () hs.application.launchOrFocus("WhatsApp") end)
 hs.hotkey.bind(hyper, 'S', function () hs.application.launchOrFocus("Slack") end)
 hs.hotkey.bind(hyper, 'C', function () hs.application.launchOrFocus("Calendar") end)
-hs.hotkey.bind(hyper, 'K', function () hs.application.launchOrFocus("Sketch") end)
 hs.hotkey.bind(hyper, 'T', function () hs.application.launchOrFocus("Microsoft To Do") end)
 hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
 
