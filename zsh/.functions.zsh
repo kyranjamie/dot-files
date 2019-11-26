@@ -17,6 +17,10 @@ uuid() {
 # httpDebug:  Download a web page and show info on what took time
 httpdebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
 
+function stxaddress() {
+  echo 'SP2DY59Z9GE24ZBMD0Z5RCGG09PM7SJBDWZH9E75M' | pbcopy
+}
+
 # Make and cd into dir
 function mcd() {
   mkdir -p "$1" && cd "$1";
