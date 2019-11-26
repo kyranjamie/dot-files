@@ -1,3 +1,4 @@
 --type-set=ts:ext:ts
 --type-set=tsdef:match:/.+\.d\.ts/
 --ignore-dir=match:/.next/
+--ignore-case
