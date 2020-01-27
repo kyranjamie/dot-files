@@ -26,6 +26,7 @@ hs.hotkey.bind(hyper, 'S', function () hs.application.launchOrFocus("Slack") end
 hs.hotkey.bind(hyper, 'C', function () hs.application.launchOrFocus("Calendar") end)
 hs.hotkey.bind(hyper, 'T', function () hs.application.launchOrFocus("Microsoft To Do") end)
 hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
+hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
 
 function toggleFullScreen(s)
   local win = hs.window.focusedWindow()
