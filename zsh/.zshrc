@@ -11,7 +11,7 @@ export NODE_VERSION="v13.11.0"
 export DOCKER_ID_USER="kyranjamie"
 export HOMEBREW_BREWFILE="~/dev/dot-files/Brewfile"
 export HOMEBREW_CASK_OPTS="--appdir=$HOME/cask-apps"
-export BP_DASHBOARD_PROJECT="$HOME/dev/blockport/frontend"
+export GPG_TTY=$(tty)
 
 export PATH="/usr/local/bin:${PATH}"
 export PATH="${HOME}/Dropbox/tech/scripts:${PATH}"
