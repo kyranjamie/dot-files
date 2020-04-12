@@ -1,19 +1,34 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "cmd+=",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "cmd+-",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "cmd+=",
-        "command": "editor.action.fontZoomIn"
-    },
-    {
-        "key": "cmd+-",
-        "command": "editor.action.fontZoomOut"
-    }
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "shift+f10",
+    "command": "-editor.action.showContextMenu",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+alt+.",
+    "command": "editor.action.showContextMenu",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+k cmd+u",
+    "command": "-editor.action.removeCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  }
 ]
