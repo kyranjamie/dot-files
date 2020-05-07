@@ -7,7 +7,7 @@
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    "workbench.colorTheme": "Solarized Light",
     "editor.tabSize": 1,
     "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": true,
@@ -16,13 +16,11 @@
     "telemetry.enableCrashReporter": false,
     "workbench.tree.indent": 18,
     "breadcrumbs.enabled": false,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "boundary",
     "editor.renderControlCharacters": true,
-    "workbench.activityBar.visible": true,
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
-    "explorer.confirmDragAndDrop": false,
     "gitlens.views.repositories.location": "gitlens",
     "gitlens.views.fileHistory.location": "gitlens",
     "gitlens.views.lineHistory.location": "gitlens",
@@ -115,5 +113,11 @@
     },
     "search.exclude": {
         "**/dist": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "debug.onTaskErrors": "showErrors",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
