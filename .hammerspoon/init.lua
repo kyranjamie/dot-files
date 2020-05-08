@@ -2,12 +2,12 @@ local hyper = {"ctrl", "alt", "cmd", "shift"}
 
 hs.loadSpoon("MiroWindowsManager")
 
-hs.window.animationDuration = 0
+hs.window.animationDuration = 0.1
 spoon.MiroWindowsManager:bindHotkeys({
   down = {hyper, "down"},
   right = {hyper, "right"},
   left = {hyper, "left"},
-  up = {hyper, "F20" },
+  up = {{"ctrl", "alt", "cmd"}, "up"},
   fullscreen = {hyper, "up"}
 })
 
@@ -25,7 +25,6 @@ hs.hotkey.bind(hyper, 'W', function () hs.application.launchOrFocus("WhatsApp") 
 hs.hotkey.bind(hyper, 'S', function () hs.application.launchOrFocus("Slack") end)
 hs.hotkey.bind(hyper, 'C', function () hs.application.launchOrFocus("Calendar") end)
 hs.hotkey.bind(hyper, 'T', function () hs.application.launchOrFocus("Microsoft To Do") end)
-hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
 hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
 
 function toggleFullScreen(s)
