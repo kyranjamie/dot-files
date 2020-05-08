@@ -119,5 +119,6 @@
     "debug.onTaskErrors": "showErrors",
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.editor.scrollToSwitchTabs": true
 }
