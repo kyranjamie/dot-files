@@ -26,5 +26,10 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "import statement",
     "body": "import { $2 } from '$1';"
+  },
+  "Anonymous function": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "bfn",
+    "body": "($1) => {$2}$0"
   }
 }
