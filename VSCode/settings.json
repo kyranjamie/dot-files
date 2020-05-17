@@ -16,7 +16,7 @@
     "telemetry.enableCrashReporter": false,
     "workbench.tree.indent": 18,
     "breadcrumbs.enabled": false,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "explorer.openEditors.visible": 0,
     "window.zoomLevel": 0,
@@ -120,5 +120,13 @@
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.editor.scrollToSwitchTabs": true
+    "workbench.editor.scrollToSwitchTabs": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "cSpell.userWords": [
+        "blockstack",
+        "kyran"
+    ],
+    "markdownlint.config": {
+        "MD026": false
+    }
 }
