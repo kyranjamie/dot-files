@@ -123,10 +123,27 @@
     "workbench.editor.scrollToSwitchTabs": true,
     "gitlens.hovers.currentLine.over": "line",
     "cSpell.userWords": [
+        "Diwaker's",
         "blockstack",
-        "kyran"
+        "devtool",
+        "diwaker",
+        "kyran",
+        "mocknet",
+        "pageview",
+        "persistor",
+        "repr",
+        "slugify",
+        "track",
+        "unstyled",
+        "wordlists"
     ],
     "markdownlint.config": {
         "MD026": false
-    }
+    },
+    "window.title": "${folderPath}",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": true
+    },
+    "eslint.format.enable": true,
+    "eslint.run": "onSave"
 }

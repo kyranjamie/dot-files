@@ -17,6 +17,7 @@ hs.hotkey.bind(hyper, "R", function()
 end)
 
 hs.hotkey.bind(hyper, 'A', function () hs.application.launchOrFocus("Google Chrome") end)
+hs.hotkey.bind(hyper, 'D', function () hs.application.launchOrFocus("Figma") end)
 hs.hotkey.bind(hyper, 'M', function () hs.application.launchOrFocus("Spotify") end)
 hs.hotkey.bind(hyper, 'E', function () hs.application.launchOrFocus("Visual Studio Code") end)
 hs.hotkey.bind(hyper, 'G', function () hs.application.launchOrFocus("Telegram") end)
