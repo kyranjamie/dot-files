@@ -40,6 +40,7 @@ alias vimdiff="nvim -d"
 alias grep='grep -i'
 alias less='less -N'
 alias py='python3.4'
+alias python='python3'
 alias sudo="sudo "
 alias sz='source ~/.zshrc'
 

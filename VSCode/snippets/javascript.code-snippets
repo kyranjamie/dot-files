@@ -31,5 +31,15 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "bfn",
     "body": "($1) => {$2}$0"
+  },
+  "Test: describe": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "describe",
+    "body": "describe('$1', () => {\n  $2\n});"
+  },
+  "Test: test": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "test",
+    "body": "test('$1', () => {\n  $2\n});"
   }
 }
