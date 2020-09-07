@@ -1,10 +1,10 @@
 {
- // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
- // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
- // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
- // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
- // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
- // Placeholders with the same ids are connected.
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
   "Print to console": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "cl",
@@ -15,10 +15,12 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "rcom",
     "body": [
-      "import React from 'react';",
+      "import React, { FC } from 'react';",
       "",
-      "export const $1 = () => {",
-      "  return ($2)",
+      "interface $1Props {}",
+      "",
+      "export const $1: FC<$1Props> = () => {",
+      "  return (<>$2</>)",
       "};"
     ]
   },
@@ -41,5 +43,15 @@
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "test",
     "body": "test('$1', () => {\n  $2\n});"
+  },
+  "interface": {
+    "prefix": "interface",
+    "body": ["interface $1 {$2}"],
+    "description": "Outputs a blank interface"
+  },
+  "state": {
+    "prefix": "state",
+    "body": "const [$1, set$2] = useState($3);",
+    "description": "React useState hook"
   }
 }
