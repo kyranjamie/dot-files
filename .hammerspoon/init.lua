@@ -28,10 +28,15 @@ hs.hotkey.bind(hyper, 'E', function () hs.application.launchOrFocus("Visual Stud
 hs.hotkey.bind(hyper, 'F', function () hs.application.launchOrFocus("Finder") end)
 hs.hotkey.bind(hyper, 'G', function () hs.application.launchOrFocus("Telegram") end)
 hs.hotkey.bind(hyper, 'M', function () hs.application.launchOrFocus("Spotify") end)
-hs.hotkey.bind(hyper, 'S', function () hs.application.launchOrFocus("Slack") end)
+hs.hotkey.bind(hyper, 'S', function () hs.application.launchOrFocus("Discord") end)
 hs.hotkey.bind(hyper, 'T', function () hs.application.launchOrFocus("Microsoft To Do") end)
 hs.hotkey.bind(hyper, 'W', function () hs.application.launchOrFocus("WhatsApp") end)
 hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
+
+hs.hotkey.bind(hyper, '0', function ()
+  local resp = hs.execute("blockstack-cli make_keychain -t | jq -r .keyInfo.address", true)
+  hs.eventtap.keyStrokes(resp)
+end)
 
 function toggleFullScreen(s)
   local win = hs.window.focusedWindow()
