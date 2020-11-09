@@ -50,8 +50,8 @@
     "description": "Outputs a blank interface"
   },
   "state": {
-    "prefix": "state",
-    "body": "const [$1, set$2] = useState($3);",
+    "prefix": "usestate",
+    "body": "const [${1}, set${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}] = useState(${2:default${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}});",
     "description": "React useState hook"
   }
 }
