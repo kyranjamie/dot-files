@@ -1,6 +1,3 @@
-# Ensure conig dir exists
-mkdir $HOME/.config
-
 ln -s $HOME/dev/dot-files/zsh/.hushlogin $HOME
 ln -s $HOME/dev/dot-files/zsh/.aliases.zsh $HOME
 ln -s $HOME/dev/dot-files/zsh/.zshrc $HOME
