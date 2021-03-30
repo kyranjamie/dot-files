@@ -34,7 +34,7 @@ hs.hotkey.bind(hyper, 'W', function () hs.application.launchOrFocus("WhatsApp") 
 hs.hotkey.bind(hyper, 'Z', function () hs.application.launchOrFocus("zoom.us") end)
 
 hs.hotkey.bind(hyper, '0', function ()
-  local resp = hs.execute("blockstack-cli make_keychain -t | jq -r .keyInfo.address", true)
+  local resp = hs.execute("stx make_keychain -t | jq -r .keyInfo.address", true)
   hs.eventtap.keyStrokes(resp)
 end)
 

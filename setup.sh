@@ -14,10 +14,10 @@ ln -s $HOME/dev/dot-files/ranger $HOME/.config
 ln -s $HOME/dev/dot-files/karabiner $HOME/.config
 ln -s $HOME/dev/dot-files/nvim $HOME/.config
 
-# Sublime Text
-ln -s $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -s $HOME/dev/dot-files/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-ln -s $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+# # Sublime Text
+# ln -s $HOME/dev/dot-files/Preferences.sublime-settings $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+# ln -s $HOME/dev/dot-files/snippets $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+# ln -s $HOME/dev/dot-files/Default\ \(OSX\).sublime-keymap $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 # VSCode
 ln -s $HOME/dev/dot-files/VSCode/settings.json $HOME/Library/Application\ Support/Code/User/
